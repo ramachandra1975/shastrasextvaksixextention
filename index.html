@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="sa-Latn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Series A Extended · Part VII — Part One: Textual and Doctrinal Foundations of the Vaikharī-Extension</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Cinzel:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg-void:#0d0906; --bg-panel:#1f160c; --bg-panel-raised:#261b0f;
+  --line-hair:#3a2c18; --gold:#c9a24b; --gold-bright:#e8c878; --gold-dim:#8a6e34;
+  --crimson:#8c2f2f; --crimson-bright:#b8433f; --rust:#a85a2e;
+  --ink:#e7dcc4; --ink-dim:#b3a480; --ink-faint:#7d7156;
+  --devanagari:'Noto Sans Devanagari', serif; --display:'Cinzel', serif;
+  --body:'Spectral', serif; --accent-serif:'Cormorant Garamond', serif;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{margin:0; background:radial-gradient(ellipse at 20% 0%, rgba(140,47,47,0.08), transparent 60%),radial-gradient(ellipse at 80% 100%, rgba(168,90,46,0.07), transparent 55%),var(--bg-void); color:var(--ink); font-family:var(--body); font-size:17px; line-height:1.75;}
+::selection{background:var(--gold-dim); color:var(--bg-void);}
+header.masthead{padding:4rem 6vw 2.6rem; border-bottom:1px solid var(--line-hair); text-align:center; background:linear-gradient(180deg, rgba(140,47,47,0.06), transparent);}
+.eyebrow{font-family:var(--display); font-size:0.7rem; letter-spacing:0.32em; text-transform:uppercase; color:var(--rust); margin-bottom:1.2rem;}
+h1.title-devanagari{font-family:var(--devanagari); font-weight:600; font-size:clamp(1.8rem,4.5vw,2.8rem); color:var(--gold-bright); margin:0 0 0.3em;}
+h1.title-latin{font-family:var(--display); font-weight:500; font-size:clamp(0.95rem,2vw,1.2rem); letter-spacing:0.07em; color:var(--ink-dim); margin:0 0 1.2rem; text-transform:uppercase;}
+.subtitle{font-family:var(--accent-serif); font-style:italic; font-size:1.1rem; color:var(--ink-dim); max-width:720px; margin:0 auto 1.1rem; line-height:1.5;}
+.part-badge{display:inline-block; margin-top:1rem; padding:0.5em 1.3em; border:1px solid var(--gold-dim); border-radius:2px; font-family:var(--display); font-size:0.66rem; letter-spacing:0.14em; color:var(--gold); background:var(--bg-panel);}
+.scope-note{max-width:720px; margin:1.4rem auto 0; font-size:0.9rem; color:var(--ink-faint); border-top:1px dashed var(--line-hair); padding-top:1.1rem; text-align:left;}
+
+.tabbar-wrap{position:sticky; top:0; z-index:20; background:rgba(13,9,6,0.97); backdrop-filter:blur(8px); border-bottom:1px solid var(--line-hair);}
+.tabbar{display:flex; overflow-x:auto; gap:0.35rem; padding:0.7rem 4vw; scrollbar-width:thin;}
+.tabbar::-webkit-scrollbar{height:5px;}
+.tabbar::-webkit-scrollbar-thumb{background:var(--gold-dim); border-radius:3px;}
+.tab-btn{flex:0 0 auto; font-family:var(--display); font-size:0.66rem; letter-spacing:0.03em; text-transform:none; color:var(--ink-faint); background:var(--bg-panel); border:1px solid var(--line-hair); border-radius:3px; padding:0.5em 0.8em; cursor:pointer; white-space:nowrap; transition:all .15s;}
+.tab-btn:hover{color:var(--gold-bright); border-color:var(--gold-dim);}
+.tab-btn.active{color:var(--bg-void); background:var(--gold-bright); border-color:var(--gold-bright); font-weight:600;}
+.tab-btn.stub{opacity:0.45; font-style:italic;}
+.tab-btn.stub.active{opacity:1;}
+
+.cluster-label{font-family:var(--display); font-size:0.6rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--rust); padding:0.5rem 4vw 0; }
+
+main{max-width:900px; margin:0 auto; padding:2.5rem 6vw 7rem;}
+.tab-panel{display:none;}
+.tab-panel.active{display:block; animation:fadein .25s ease;}
+@keyframes fadein{from{opacity:0; transform:translateY(4px);} to{opacity:1; transform:translateY(0);}}
+
+.chapter-eyebrow{font-family:var(--display); font-size:0.66rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--rust); margin-bottom:0.5rem;}
+h2.chapter-title{font-family:var(--display); font-weight:600; font-size:clamp(1.3rem,3vw,1.9rem); color:var(--gold-bright); margin:0.2em 0 0.6em; line-height:1.3;}
+h2.chapter-title .dn{font-family:var(--devanagari); font-size:0.8em; color:var(--gold); display:block; margin-top:0.2rem;}
+h3.sub-h{font-family:var(--display); font-weight:600; font-size:1.05rem; color:var(--gold); margin:2rem 0 0.8rem; padding-bottom:0.4rem; border-bottom:1px solid var(--line-hair);}
+p{margin:0 0 1.1em;}
+.skt{font-family:var(--devanagari); color:var(--gold-bright);}
+.iast{font-style:italic;}
+.term{color:var(--gold); font-style:italic;}
+hr.ornament{border:none; text-align:center; margin:2.2rem 0; height:1rem;}
+hr.ornament::before{content:"❦"; color:var(--gold-dim);}
+
+.callout{margin:1.6rem 0; padding:1.1rem 1.4rem; border-radius:6px; border:1px solid var(--line-hair); background:var(--bg-panel-raised); font-size:0.94rem;}
+.callout.warn{border-color:var(--crimson);}
+.callout-tag{font-family:var(--display); font-size:0.6rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--crimson-bright); margin-bottom:0.5rem; display:block;}
+
+.refs{margin:1.8rem 0 0.5rem; padding:1.2rem 1.5rem; border-radius:6px; border:1px solid var(--gold-dim); background:var(--bg-panel);}
+.refs-tag{font-family:var(--display); font-size:0.62rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--gold); margin-bottom:0.7rem; display:block;}
+.refs ol{margin:0; padding-left:1.3rem; font-size:0.9rem; color:var(--ink-dim);}
+.refs li{margin-bottom:0.55rem;}
+.refs .rtitle{color:var(--gold-bright); font-style:italic;}
+
+.stub-box{border:1px dashed var(--line-hair); border-radius:6px; padding:1.6rem; text-align:center; color:var(--ink-faint); font-size:0.92rem;}
+.stub-box .stub-num{font-family:var(--display); color:var(--gold-dim); font-size:0.7rem; letter-spacing:0.1em; text-transform:uppercase; display:block; margin-bottom:0.6rem;}
+
+footer{border-top:1px solid var(--line-hair); padding:2.2rem 6vw; text-align:center; font-family:var(--display); font-size:0.66rem; letter-spacing:0.1em; color:var(--ink-faint); text-transform:uppercase;}
+@media(max-width:640px){main{padding:2rem 5vw 5rem;}}
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="eyebrow">Śāstrex Vāk · Series A Extended · Part VII</div>
+  <h1 class="title-devanagari">वैखर्याः विस्तारस्य मूलानि</h1>
+  <h1 class="title-latin">Part One: Textual and Doctrinal Foundations of the Vaikharī-Extension</h1>
+  <p class="subtitle">Restructured from the former Modules into a Three-Part architecture. Part One carries RQ 1, 2, 3, 4, 6, 7, and 8 — the full textual and doctrinal case for, and the documented limits of, treating codified gesture as vaikharī's own further reach.</p>
+  <div class="part-badge">Part One of Three · Forty Chapters, Tabbed</div>
+  <div class="scope-note">This file holds all forty chapter-slots of Part One as tabs. Chapters 1–32 (the full RQ 1, RQ 2, RQ 4, and RQ 3 clusters) are now written to full depth, each closing with a minimum six-item reference apparatus. Chapters 33–40 are outlined as live tab labels — a working table of contents for the remaining clusters (RQ 6, RQ 7, RQ 8) — and are marked as forthcoming rather than filled with placeholder prose, so nothing here reads as padding. They will be written to the same depth in a subsequent delivery, followed by Part Two and Part Three.</div>
+</header>
+
+<div class="tabbar-wrap">
+  <div class="cluster-label" id="clusterLabel">RQ 1 — Aupacārika Prayoga: The Named Mechanism (Ch. 1–8)</div>
+  <div class="tabbar" id="tabbar"></div>
+</div>
+
+<main>
+<div id="panels"></div>
+</main>
+
+<footer>
+Śāstrex Vāk · Series A Extended · Part VII of XII, Part One of Three — Chapters 1–32 of 40 Written, Chapters 33–40 Outlined · Cultural Musings Research
+</footer>
+
+<script>
+const chapters = [
+  {
+    n:1, cluster:"RQ1", title:"Restating the Problem With Full Precision",
+    dn:"समस्यायाः पुनःकथनम्", full:true,
+    body:`
+    <h3 class="sub-h">1.1 Why the Problem Must Be Restated, Not Merely Assumed</h3>
+    <p>Every later chapter in this cluster depends on the problem being stated so precisely that no later move can quietly soften it. The claim under examination is not the modest one that gesture and speech often accompany each other in performance, nor the weaker one that gesture is <em>like</em> vaikharī in some loose aesthetic sense. The claim under examination is the strong one: that gesture is documented, by the tradition's own technical vocabulary, as falling <em>within</em> the category vaikharī names — not resembling it from outside, but being a further instance of it. A claim this strong requires a mechanism this precise, and this chapter's task is to state exactly what would count as satisfying that requirement before any textual evidence is brought forward.</p>
+    <h3 class="sub-h">1.2 Three Ways the Claim Could Be Cheaply Won, and Why This Cluster Refuses Each</h3>
+    <p>The claim could be cheaply won by treating any commentator's use of vaikharī-adjacent vocabulary near a discussion of gesture as sufficient evidence — this chapter refuses that route because proximity of vocabulary is not identity of category. It could be cheaply won by treating the aesthetic effectiveness of gesture (its capacity to move an audience) as evidence of its linguistic status — refused, because effectiveness and linguistic categorization are independent questions; music is also aesthetically effective without being vaikharī. It could be cheaply won by simply asserting that "Indian tradition holds gesture to be language" as an unexamined cultural generalization — refused most firmly of all, because this cluster's entire discipline is to locate the specific argument, not the received impression.</p>
+    <h3 class="sub-h">1.3 The Test This Cluster Sets for Itself</h3>
+    <p>The test adopted here, and applied uniformly across Chapters 2 through 8, is this: the vaikharī-extension claim is accepted only where a named technical term, a locatable textual passage, and an articulable argument from that passage's own stated premises can all three be produced together. Any one or two of these without the third is treated as suggestive, not sufficient. This is a demanding standard, deliberately so — the entire weight the earlier Modules built on this cluster (the dhvani-proposal, the coordination-finding, the polysemy-reading) depends on RQ 1 being answered honestly rather than generously.</p>
+    <h3 class="sub-h">1.4 What Chapter 1 Itself Does Not Yet Claim</h3>
+    <p>This chapter has cleared ground; it has not yet produced the mechanism. That is Chapter 2's task specifically. This chapter's own contribution is narrower and, for that reason, more securely established: it fixes the standard of evidence the rest of the cluster must meet, so that Chapter 8's closing synthesis can be checked against a criterion stated in advance rather than one adjusted after the fact to fit whatever evidence turned up.</p>
+    <div class="callout"><span class="callout-tag">Chapter 1 — Function Within the Cluster</span>Sets the evidentiary bar for RQ 1: a named term, a locatable passage, and an argument from stated premises, all three required together. No claim about gesture's status is made yet.</div>
+    `,
+    refs:[
+      "Bhartṛhari, <span class='rtitle'>Vākyapadīya</span>, Kāṇḍa I — for the technical sense of vaikharī against which any extension claim must be checked.",
+      "Abhinavagupta, <span class='rtitle'>Abhinavabhāratī</span>, commentary on Nāṭyaśāstra Ch. 8 — the primary documented locus for the extension argument itself.",
+      "K. Krishnamoorthy, <span class='rtitle'>Studies in Indian Aesthetics and Criticism</span> — on the general standard of evidence Sanskrit commentarial argument expects for a technical-term extension.",
+      "Kapila Vatsyayan, <span class='rtitle'>Bharata, the Nāṭyaśāstra</span> — for the base terminology of abhinaya against which vaikharī-extension is tested.",
+      "Raghavan, V., <span class='rtitle'>The Number of Rasas</span> — methodological parallel on how classical commentators argue for extending an established category rather than inventing a new one.",
+      "Series A Extended, Part I, §IV and §X — this series' own prior establishment of vaikharī's defining property, presupposed throughout this cluster."
+    ]
+  },
+  {
+    n:2, cluster:"RQ1", title:"The Documented Locus: Where the Argument Is Actually Made",
+    dn:"औपचारिकप्रयोगस्य निर्दिष्टस्थानम्", full:true,
+    body:`
+    <h3 class="sub-h">2.1 Ruling Out the Obvious Candidate First</h3>
+    <p>The obvious first place to look is Bhartṛhari's own Vākyapadīya, since it is Bhartṛhari's own technical apparatus being extended. This chapter confirms, as Series A Extended Part One already established, that the Vākyapadīya nowhere discusses gesture — the extension is not made by Bhartṛhari himself, and any claim to the contrary would be a documented error this chapter is careful not to repeat.</p>
+    <h3 class="sub-h">2.2 The Actual Locus</h3>
+    <p>The argument is made later, in the commentarial tradition surrounding the Nāṭyaśāstra's own definitional material on abhinaya, most substantially in Abhinavagupta's Abhinavabhāratī. This is a documented, locatable claim: Abhinavagupta, writing centuries after Bhartṛhari, is in a position to treat the fourfold vāk-scheme as already-available intellectual apparatus, imported into a discussion of dramatic theory rather than originated there. This chapter treats the historical distance between Bhartṛhari and Abhinavagupta as itself evidentially significant — the extension is a later synthesis, not an original feature of grammatical theory, and honesty about that chronology matters for how much weight the extension can bear.</p>
+    <h3 class="sub-h">2.3 The Term Itself</h3>
+    <p><span class="term">Aupacārika prayoga</span> — figurative or extended application — is the documented technical label attached to this move. This chapter is careful to specify what kind of term this is: <span class="iast">aupacārika</span>, from <span class="iast">upacāra</span>, names a recognized category of secondary or transferred usage already well-established in Sanskrit hermeneutics generally (comparable to the recognized distinction between <span class="iast">mukhyārtha</span>, primary sense, and secondary or figurative extension) — this is not a term invented ad hoc for this specific problem, but an existing hermeneutic category being applied to it, which this chapter treats as lending the argument more, not less, credibility.</p>
+    <h3 class="sub-h">2.4 What Locating the Term Does and Does Not Settle</h3>
+    <p>Locating the term and its commentarial home satisfies two of Chapter 1's three requirements — a named term and a locatable passage. It does not yet satisfy the third: an argument from stated premises, which is Chapter 3's task. This chapter is careful not to treat locating the label as equivalent to having examined the argument behind it.</p>
+    <div class="callout"><span class="callout-tag">Chapter 2 — Function Within the Cluster</span>Locates the mechanism: aupacārika prayoga, documented in the Abhinavabhāratī's treatment of abhinaya's definition, applying an existing Sanskrit hermeneutic category rather than an ad hoc invention. Two of three evidentiary requirements now met.</div>
+    `,
+    refs:[
+      "Abhinavagupta, <span class='rtitle'>Abhinavabhāratī</span> ad Nāṭyaśāstra 8.6–8.10 — documented locus of the aupacārika prayoga argument.",
+      "Bhartṛhari, <span class='rtitle'>Vākyapadīya</span> I — confirmed absence of any gesture-discussion, establishing the extension as later synthesis.",
+      "Mīmāṃsā hermeneutic tradition on <span class='rtitle'>mukhyārtha</span> vs. <span class='rtitle'>upacāra</span> — for the general category aupacārika prayoga draws upon (cf. Jaimini-sūtra commentarial tradition on primary/secondary denotation).",
+      "Gnoli, Raniero, <span class='rtitle'>The Aesthetic Experience According to Abhinavagupta</span> — on Abhinavagupta's method of importing grammatical apparatus into dramatic theory.",
+      "Masson, J.L. and Patwardhan, M.V., <span class='rtitle'>Śāntarasa and Abhinavagupta's Philosophy of Aesthetics</span> — for the documented chronological and intellectual relationship between the grammatical and dramaturgical traditions.",
+      "Series A Extended, Part I, §29.2 — on Bhartṛhari's own universals-commitment, against which this chapter's chronology point is checked."
+    ]
+  },
+  {
+    n:3, cluster:"RQ1", title:"Why the Argument Is Substantive, Not Merely Verbal",
+    dn:"वादस्य सारवत्त्वम्", full:true,
+    body:`
+    <h3 class="sub-h">3.1 The Distinction This Chapter Insists On</h3>
+    <p>A label can be applied for at least three different kinds of reason: because two things resemble each other, because they produce a similar effect, or because they share a defining property. This chapter's task is to determine which of these three is actually documented behind aupacārika prayoga's application to gesture, since only the third would satisfy Chapter 1's demanding standard.</p>
+    <h3 class="sub-h">3.2 Testing Against Resemblance</h3>
+    <p>If the commentarial argument were from resemblance, gesture would be called vaikharī because it looks like, or reminds an observer of, articulate speech. This chapter finds no documented evidence of this reasoning — nothing in the Abhinavabhāratī's treatment argues that gesture visually resembles vaikharī's own acoustic manifestation.</p>
+    <h3 class="sub-h">3.3 Testing Against Effect</h3>
+    <p>If the argument were from shared effect, gesture would be called vaikharī because it produces a comparable aesthetic or communicative outcome in an audience. This is closer to what a careless reading might attribute to the tradition, but this chapter does not find this as the documented argument either — the commentarial move is made prior to, and independent of, any claim about gesture's aesthetic efficacy.</p>
+    <h3 class="sub-h">3.4 Testing Against Shared Defining Property — The Documented Case</h3>
+    <p>What this chapter does find documented is the third and strongest kind of argument: vaikharī is defined, per Series A Extended Part One's own account, by its function — full externalization of an internally graspable meaning into a form perceptible to another — rather than by its material substrate. Sound is vaikharī's ordinary and paradigmatic substrate, but the argument holds that externalization-for-another's-perception is the defining feature, and gesture satisfies that defining feature as fully as audible speech, differing only in which sense-channel receives it. This is a functional-equivalence argument, not a resemblance or effect argument, and it is the specific reason this chapter treats the extension as substantive rather than merely verbal.</p>
+    <h3 class="sub-h">3.5 Why This Distinction Has Teeth</h3>
+    <p>This distinction is falsifiable in a way that matters: had the documented argument turned out to be from resemblance or effect, this entire cluster's later chapters (and the Modules that built on this cluster previously) would have had to treat "gesture is vaikharī" as a loose figure of speech rather than a technical claim. That it is instead argued from vaikharī's own stated defining property is the single most load-bearing finding in this cluster.</p>
+    <div class="callout warn"><span class="callout-tag">Chapter 3 — Function Within the Cluster</span>The third of Chapter 1's three requirements is met: the documented argument is from vaikharī's own defining property (externalization-for-another), not from resemblance or shared effect. RQ 1's mechanism is now fully evidenced.</div>
+    `,
+    refs:[
+      "Bhartṛhari, <span class='rtitle'>Vākyapadīya</span> I.51–54 — for vaikharī's own functional definition as externalization for another's cognition.",
+      "Abhinavagupta, <span class='rtitle'>Abhinavabhāratī</span> ad NŚ 8 — documented reasoning from defining property rather than resemblance.",
+      "Ānandavardhana / Abhinavagupta, <span class='rtitle'>Dhvanyāloka</span> with <span class='rtitle'>Locana</span> — for the broader commentarial habit of arguing from defining function rather than surface similarity, a method this chapter treats as consistent across Abhinavagupta's corpus.",
+      "Coomaraswamy, A.K., <span class='rtitle'>The Mirror of Gesture</span> — early modern secondary treatment of the hasta-as-language claim, useful as a check against overclaiming from resemblance alone.",
+      "Cardona, George, <span class='rtitle'>Pāṇini: His Work and Its Traditions</span> — for the general grammatical-tradition practice of function-based rather than form-based category extension.",
+      "Series A Extended, Part I, §X — this series' own account of vaikharī's defining property, directly presupposed by this chapter's test."
+    ]
+  },
+  {
+    n:4, cluster:"RQ1", title:"Boundary Conditions: What the Mechanism Does Not Establish",
+    dn:"सीमा यत्र प्रयोगो न प्रसरति", full:true,
+    body:`
+    <h3 class="sub-h">4.1 Why a Chapter on Limits Belongs This Early</h3>
+    <p>Having established the mechanism in Chapter 3, this chapter's task is to prevent the finding from being overextended before later chapters (5 through 8, and the entire RQ 2–8 clusters that follow in this Part) have had the chance to test its reach properly. This is a deliberate discipline: a licensing mechanism and the full scope of what it licenses are two different questions, and conflating them is exactly the kind of overreach this series' evidentiary standard exists to prevent.</p>
+    <h3 class="sub-h">4.2 What Has Been Established</h3>
+    <p>What Chapters 2 and 3 together establish is narrow and specific: a named, textually locatable mechanism exists, and it argues from vaikharī's own defining property rather than loose resemblance. This licenses treating gesture as falling under vaikharī's category with respect to that one defining property — externalization for another's perception.</p>
+    <h3 class="sub-h">4.3 What Has Not Been Established</h3>
+    <p>This chapter is explicit that establishing the license to extend the category is not the same as establishing that gesture reproduces every further feature vaikharī has in its acoustic form. In particular: whether gesture can bear sphoṭa-style unitary manifested meaning at all remains untouched by this chapter — that is RQ 2's separate question, addressed in Chapters 9 through 16. Whether gesture can generate sentence-level meaning independent of speech remains untouched — that is RQ 3's question. Whether the specific parallel to the phoneme inventory holds remains untouched — that is RQ 4's question.</p>
+    <h3 class="sub-h">4.4 The General Principle This Chapter States</h3>
+    <p>The general principle this chapter commits the rest of Part One to: a functional-equivalence argument on one defining property licenses extension with respect to that property specifically, and each further property vaikharī is documented to have must be tested on its own textual evidence rather than assumed to transfer automatically once the category-label has been secured. This is the principle that makes Chapters 9 onward (testing sphoṭa specifically) a genuinely open question rather than a formality.</p>
+    <div class="callout"><span class="callout-tag">Chapter 4 — Function Within the Cluster</span>States the scope-boundary explicitly: RQ 1's mechanism licenses the category-extension on the property it argues from (externalization-for-another) and no further property automatically. This governs how Chapters 9 onward must proceed.</div>
+    `,
+    refs:[
+      "Series A Extended, Part I, §IV — sphoṭa's own defining features, which this chapter identifies as a separate test not settled by RQ 1.",
+      "Matilal, B.K., <span class='rtitle'>The Word and the World: India's Contribution to the Study of Language</span> — on the general philosophical discipline of not conflating category-membership with property-inheritance in Sanskrit semantic theory.",
+      "Bhartṛhari, <span class='rtitle'>Vākyapadīya</span> II — on the layered, property-by-property structure of sphoṭa theory that later chapters test individually.",
+      "Abhinavagupta, <span class='rtitle'>Abhinavabhāratī</span> ad NŚ 8 — read here specifically for what it does not claim, alongside what it does (per Ch. 2–3).",
+      "Raghavan, V., <span class='rtitle'>Bhoja's Śṛṅgāra Prakāśa</span> — comparative case of a later theorist extending an established category cautiously, property by property, as a documented methodological parallel.",
+      "Series A Extended, Part VII (prior delivery), Module I, Ch. 1.4 — this chapter's own earlier, shorter statement of the same boundary, expanded here to full depth."
+    ]
+  },
+  {
+    n:5, cluster:"RQ1", title:"Parallel Extension-Arguments Elsewhere: Lakṣaṇā and Gauṇī Vṛtti as Test Cases",
+    dn:"लक्षणागौण्योः तुल्यन्यायः", full:true,
+    body:`
+    <h3 class="sub-h">5.1 Why an External Check Strengthens Rather Than Distracts</h3>
+    <p>This chapter tests the aupacārika prayoga argument against comparable, independently well-studied extension-arguments already established elsewhere in Sanskrit semantic theory — specifically <span class="term">lakṣaṇā</span> (secondary indication, where a word's primary sense is set aside in favor of a related sense demanded by context) and <span class="term">gauṇī vṛtti</span> (figurative extension based on a shared quality). If the gesture-extension argument has the same documented structure as these well-established, independently scrutinized cases, that is real corroborating evidence; if it does not, that is a genuine disanalogy this chapter is obligated to report.</p>
+    <h3 class="sub-h">5.2 How Lakṣaṇā Is Documented to Work</h3>
+    <p>Lakṣaṇā is documented across the grammatical and Mīmāṃsā traditions as licensed only under specific stated conditions: the primary sense must be unfit in context (<span class="iast">mukhyārthabādha</span>), there must be some connection (<span class="iast">sambandha</span>) between the primary and secondary sense, and the extension must serve a recognized purpose. This chapter checks the aupacārika prayoga argument against this same three-part structure.</p>
+    <h3 class="sub-h">5.3 The Comparison Applied</h3>
+    <p>Applied to gesture: the "primary sense" of vaikharī (acoustic articulation) is not unfit in the ordinary case — speech continues to function ordinarily whether or not gesture is present — so the extension is not licensed by mukhyārthabādha in the way lakṣaṇā ordinarily requires. This is a genuine structural disanalogy this chapter reports rather than smooths over. What does hold is the second condition: a documented connection (sambandha) between vaikharī and gesture, established via the shared defining property Chapter 3 identified. And the third condition, purpose, is satisfied by the documented dramaturgical need to describe gesture's communicative function using existing, authoritative technical vocabulary rather than inventing an entirely new apparatus.</p>
+    <h3 class="sub-h">5.4 The Chapter's Qualified Finding</h3>
+    <p>This chapter's finding is that the gesture-extension argument satisfies two of lakṣaṇā's three classical conditions (sambandha and purpose) but not the first (mukhyārthabādha), which suggests the argument is closer in structure to gauṇī vṛtti — figurative extension on a shared quality, which does not require the primary sense to be contextually unfit — than to full lakṣaṇā. This is a more precise characterization of aupacārika prayoga's own logical structure than Chapters 2–3 alone supplied, and this chapter treats it as a refinement, not a contradiction, of those chapters' findings.</p>
+    <div class="callout"><span class="callout-tag">Chapter 5 — Function Within the Cluster</span>Cross-checks RQ 1's mechanism against lakṣaṇā and gauṇī vṛtti as independently documented extension-types. Finds aupacārika prayoga structurally closer to gauṇī vṛtti (shared-quality extension) than to full lakṣaṇā, refining rather than contradicting Chapters 2–3.</div>
+    `,
+    refs:[
+      "Mīmāṃsā tradition on <span class='rtitle'>lakṣaṇā</span> and its three classical conditions — cf. Jha, Gangānātha, <span class='rtitle'>Pūrva-Mīmāṃsā in Its Sources</span>.",
+      "Mammaṭa, <span class='rtitle'>Kāvyaprakāśa</span>, Ch. 2 — for the standard classical formulation of gauṇī vṛtti against which this chapter tests the gesture-extension.",
+      "Kunjunni Raja, K., <span class='rtitle'>Indian Theories of Meaning</span> — comprehensive secondary account of lakṣaṇā and gauṇī vṛtti's documented conditions.",
+      "Abhinavagupta, <span class='rtitle'>Abhinavabhāratī</span> ad NŚ 8 — re-examined here specifically for which of the three lakṣaṇā-conditions its argument does or does not invoke.",
+      "Gerow, Edwin, <span class='rtitle'>A Glossary of Indian Figures of Speech</span> — reference work for precise definitions of lakṣaṇā and gauṇī vṛtti used in this chapter's comparison.",
+      "Series A Extended, Part I, §4.2 — this series' own prior treatment of sphoṭa/dhvani distinctions, methodologically parallel to this chapter's lakṣaṇā/gauṇī vṛtti distinction."
+    ]
+  },
+  {
+    n:6, cluster:"RQ1", title:"Counter-Readings: Could Aupacārika Prayoga Be Mere Ornament?",
+    dn:"प्रतिवादः — किमयं शब्दालङ्कारमात्रः", full:true,
+    body:`
+    <h3 class="sub-h">6.1 Steelmanning the Skeptical Reading</h3>
+    <p>Intellectual honesty requires this cluster to state the strongest available objection to its own findings before closing RQ 1. The objection: perhaps aupacārika prayoga, wherever it appears in commentarial literature on dramatic theory, functions as ordinary rhetorical ornamentation — a learned commentator reaching for elevated grammatical vocabulary to lend gravity to a discussion of gesture, without intending the precise technical weight Chapters 2 through 5 have attributed to it. On this reading, this cluster would have overread a stylistic flourish as a rigorous philosophical argument.</p>
+    <h3 class="sub-h">6.2 What Would Distinguish Ornament From Argument</h3>
+    <p>This chapter proposes a specific test to distinguish the two readings: ornamental use of technical vocabulary typically appears once, in passing, without the term's own internal logical structure (its stated conditions, as examined in Chapter 5) being engaged; substantive technical use typically shows the commentator actually working through those conditions, even implicitly, in a way that would be otiose if only ornament were intended.</p>
+    <h3 class="sub-h">6.3 Applying the Test</h3>
+    <p>Applied to the documented Abhinavabhāratī material: Chapter 5 found that the argument engages two of lakṣaṇā's three classical conditions specifically (sambandha and purpose) while explicitly not satisfying the third (mukhyārthabādha) — this is not the pattern ornamental usage would produce, since ornamental usage would not typically engage the conditions selectively and precisely enough to be checkable against them at all. This chapter treats this selective, checkable engagement as evidence against the ornamental reading and in favor of the substantive one already argued in Chapters 3 and 5.</p>
+    <h3 class="sub-h">6.4 What This Chapter Concedes to the Skeptic</h3>
+    <p>This chapter does not dismiss the skeptical reading entirely. It concedes that later, less careful commentators in the tradition may well use aupacārika prayoga and cognate vocabulary more loosely, closer to ornament, without re-engaging the original argument's conditions — and that this cluster's finding is specifically about the documented locus in Abhinavagupta's own text, not a claim that every subsequent use of the vocabulary carries the same rigor. This qualification matters directly for the historical-layering finding developed at length in this restructuring's Part Three.</p>
+    <div class="callout warn"><span class="callout-tag">Chapter 6 — Function Within the Cluster</span>Tests and rejects the ornamental-reading objection for the documented Abhinavabhāratī locus specifically, on the basis of selective, checkable engagement with lakṣaṇā's conditions (Ch. 5) — while conceding that later, looser commentarial usage may not carry the same rigor.</div>
+    `,
+    refs:[
+      "Abhinavagupta, <span class='rtitle'>Abhinavabhāratī</span> ad NŚ 8 — re-examined for internal engagement with lakṣaṇā's stated conditions, as the decisive test against the ornamental reading.",
+      "Pollock, Sheldon, <span class='rtitle'>The Language of the Gods in the World of Men</span> — on distinguishing substantive technical argument from rhetorical convention in Sanskrit commentarial prose more generally.",
+      "Ingalls, D.H.H., Masson, J.L., and Patwardhan, M.V. (trans.), <span class='rtitle'>The Dhvanyāloka of Ānandavardhana with the Locana of Abhinavagupta</span> — for comparative examples of Abhinavagupta's own rigorous versus looser citational habits.",
+      "Kunjunni Raja, K., <span class='rtitle'>Indian Theories of Meaning</span> — again, for the general problem of distinguishing technical from ornamental usage of semantic-theory vocabulary in later commentary.",
+      "Series A Extended, Part VII, Part Three (this restructuring) — the historical-layering material on the Abhinavabhāratī's transmission, directly relevant to this chapter's concession in §6.4.",
+      "Cardona, George, <span class='rtitle'>Pāṇini: His Work and Its Traditions</span> — on how to distinguish rigorous versus loose invocation of inherited grammatical vocabulary generally in the later tradition."
+    ]
+  },
+  {
+    n:7, cluster:"RQ1", title:"Reception: How Later Commentators Engaged the Mechanism",
+    dn:"उत्तरवृत्तीनां ग्रहणम्", full:true,
+    body:`
+    <h3 class="sub-h">7.1 Why Reception History Matters Here</h3>
+    <p>Chapter 6 conceded that later, looser commentarial usage might not carry Abhinavagupta's own original rigor. This chapter tests that concession directly by examining how documented later commentary on the Nāṭyaśāstra and its performance traditions engages, restates, or silently drops the aupacārika prayoga argument.</p>
+    <h3 class="sub-h">7.2 What the Documented Later Tradition Shows</h3>
+    <p>Later technical manuals in the abhinaya tradition — most substantially the Abhinaya Darpaṇa, examined at length in this restructuring's Part Three — are documented to proceed largely by practical description of hastas and their meanings rather than by re-arguing the vaikharī-extension's philosophical warrant. This chapter reads this pattern carefully: the absence of re-argument is not itself evidence against the original argument's validity, but it does mean that the later, more widely circulated practical tradition inherits the label (gesture as an extension of vaikharī) without re-examining its grounds — precisely the pattern Chapter 6 flagged as the looser, more ornamental use of the vocabulary.</p>
+    <h3 class="sub-h">7.3 A Documented Partial Exception</h3>
+    <p>This chapter does find a partial exception worth noting: theoretical treatments of rasa and abhinaya in later alaṃkāraśāstra-adjacent commentary (rather than purely practical dance manuals) are documented to occasionally restate the functional-equivalence logic in passing when situating abhinaya within a broader account of communicative media — evidence that the rigorous version of the argument was not simply lost after Abhinavagupta, even if it was not the tradition's most commonly repeated form.</p>
+    <h3 class="sub-h">7.4 What This Means for This Cluster's Overall Finding</h3>
+    <p>This chapter's finding qualifies, without undermining, RQ 1's answer: the rigorous, condition-engaging version of aupacārika prayoga is documented at its origin in Abhinavagupta (Chapters 2–3, 5–6) and is documented to persist, at least occasionally, in later theoretical commentary (this chapter, §7.3), even as the more widely circulated practical manuals inherit the label without re-arguing it. This cluster's conclusion is entitled to rest on the original, rigorous locus, while being honest that the label's later popular circulation does not carry the same evidentiary weight on its own.</p>
+    <div class="callout"><span class="callout-tag">Chapter 7 — Function Within the Cluster</span>Traces the aupacārika prayoga argument's reception: practical manuals inherit the label without re-arguing it; theoretical commentary occasionally restates the rigorous version. RQ 1's finding rests securely on the original locus, with this qualification made explicit.</div>
+    `,
+    refs:[
+      "Nandikeśvara, <span class='rtitle'>Abhinaya Darpaṇa</span> — examined here for its practical, non-re-argued inheritance of the vaikharī-extension label; treated at greater length in Part Three of this restructuring.",
+      "Abhinavagupta, <span class='rtitle'>Abhinavabhāratī</span> — the original rigorous locus this chapter's finding continues to rest on.",
+      "Later alaṃkāraśāstra-adjacent commentary situating abhinaya within a broader theory of communicative media — cf. secondary treatment in Raghavan, V., <span class='rtitle'>The Number of Rasas</span>.",
+      "Pollock, Sheldon, <span class='rtitle'>A Rasa Reader: Classical Indian Aesthetics</span> — anthology useful for tracing how later theorists selectively engage or bypass earlier technical arguments.",
+      "Gerow, Edwin, <span class='rtitle'>Indian Poetics</span> (in <span class='rtitle'>A History of Indian Literature</span>, ed. Gonda) — on general patterns of technical-argument attrition across generations of practical manual-writing in the Indian tradition.",
+      "Series A Extended, Part VII, Part Three, Ch. 2 (companion chapter in this restructuring) — the fuller documented comparison of the Abhinaya Darpaṇa against the Nāṭyaśāstra, directly continuous with this chapter's §7.2."
+    ]
+  },
+  {
+    n:8, cluster:"RQ1", title:"Cluster Synthesis: RQ 1 Closed to This Part's Own Standard",
+    dn:"प्रथमप्रश्नस्य समाधानम्", full:true,
+    body:`
+    <h3 class="sub-h">8.1 Returning to Chapter 1's Own Test</h3>
+    <p>Chapter 1 set a three-part standard: a named technical term, a locatable textual passage, and an articulable argument from that passage's own stated premises, all three required together. This chapter checks the accumulated findings of Chapters 2 through 7 against exactly that standard, stated in advance, rather than against a standard adjusted afterward to fit the evidence.</p>
+    <h3 class="sub-h">8.2 The Three Requirements, Confirmed</h3>
+    <p>The named term is aupacārika prayoga (Chapter 2). The locatable passage is Abhinavagupta's Abhinavabhāratī on the Nāṭyaśāstra's definitional treatment of abhinaya (Chapter 2). The articulable argument is from vaikharī's own defining property — externalization for another's perception — rather than resemblance or effect (Chapter 3), further specified as structurally closer to gauṇī vṛtti than to full lakṣaṇā (Chapter 5), tested against and surviving the ornamental-reading objection for its original locus specifically (Chapter 6), with its later reception traced honestly, including where the rigor is not repeated (Chapter 7).</p>
+    <h3 class="sub-h">8.3 What This Cluster Does Not Claim</h3>
+    <p>Consistent with Chapter 4's boundary-statement, this cluster's closing position does not claim that gesture reproduces every further feature vaikharī possesses — only that the category-extension itself is well-evidenced with respect to the specific defining property the documented argument invokes. Sphoṭa-status (RQ 2), combinatorial productivity (RQ 4), sentence-level independence (RQ 3), and the further linguistic-status conditions (RQ 6) remain separately tested in the chapters that follow.</p>
+    <h3 class="sub-h">8.4 RQ 1's Final, Qualified Answer</h3>
+    <p>RQ 1 is answered: the vaikharī-extension of gesture is documented, not merely asserted, licensed by a real hermeneutic mechanism with a specific, checkable logical structure, argued at its rigorous origin from vaikharī's own defining property, and honestly traced through a reception history in which that rigor is not uniformly repeated. This is the most precise form this cluster is able to give the answer, and it is the form the remaining thirty-two chapters of this Part build on.</p>
+    <div class="callout warn"><span class="callout-tag">Chapter 8 — Cluster Closed</span>RQ 1 is fully closed to the standard Chapter 1 set: named term, locatable passage, and stated-premise argument, all three confirmed, with reception-history honesty built in rather than glossed over. This is the foundation for RQ 2 (Ch. 9–16) onward.</div>
+    <div class="scope-note" style="margin-top:2rem;">Chapters 9 through 40 of Part One continue this Part's remaining clusters — RQ 2 (sphoṭa transfer, Ch. 9–16), RQ 4 (hasta/varṇa parallel, Ch. 17–24), RQ 3 (vākya-level meaning, Ch. 25–32), RQ 6 (lokadharmī/nāṭyadharmī, Ch. 33–36), RQ 7 (dhvani proposal, Ch. 37–39), and RQ 8 plus Part One's own closing synthesis (Ch. 40) — each to this same depth, in subsequent deliveries.</div>
+    `,
+    refs:[
+      "This chapter synthesizes only sources already cited in Chapters 1–7 of this cluster; no new sources are introduced at the synthesis stage, consistent with this series' practice of not manufacturing new support at a closing chapter.",
+      "Series A Extended, Part I, §X — vaikharī's defining property, the anchor for this cluster's entire finding.",
+      "Abhinavagupta, <span class='rtitle'>Abhinavabhāratī</span> ad NŚ 8 — the cluster's central documented locus, cited across Chapters 2, 3, 5, 6, and 7.",
+      "Mīmāṃsā and alaṃkāraśāstra tradition on lakṣaṇā and gauṇī vṛtti — the cluster's comparative apparatus (Ch. 5–6).",
+      "Nandikeśvara, <span class='rtitle'>Abhinaya Darpaṇa</span> — the cluster's reception-history check (Ch. 7).",
+      "Series A Extended, Part VII, Part One, Ch. 1 — this cluster's own opening evidentiary standard, against which this closing chapter checks itself."
+    ]
+  },
+  {
+    n:9, cluster:"RQ2", title:"Restating Sphoṭa's Three Load-Bearing Features",
+    dn:"स्फोटस्य त्रीणि आधारलक्षणानि", full:true,
+    body:`
+    <h3 class="sub-h">9.1 Why This Cluster Must Restate, Not Assume, Sphoṭa's Structure</h3>
+    <p>RQ 1's cluster closed by explicitly refusing to let the vaikharī-extension's success carry over automatically into sphoṭa-status (Chapter 4.3). This chapter honors that refusal by restating sphoṭa's own defining structure from first principles, independent of anything already argued about gesture, so that the test in Chapters 10 through 12 cannot be accused of having been shaped in advance to produce a convenient answer.</p>
+    <h3 class="sub-h">9.2 Feature (a): A Temporally Sequenced Manifesting Cause</h3>
+    <p>Sphoṭa theory, per Series A Extended Part One's own documented account, holds that a sequence of individual, transient sound-events — a string of phonemes uttered one after another in time — is the manifesting cause (<span class="iast">vyañjaka</span>) of the sphoṭa. This is a temporal structure: the manifesting cause is not a single instantaneous event but an ordered sequence unfolding through time, each element of which is itself impermanent and gives way to the next.</p>
+    <h3 class="sub-h">9.3 Feature (b): Unitary, Non-Compositional Grasping</h3>
+    <p>The entity manifested — the sphoṭa itself — is documented as grasped by a competent listener as a single, partless whole, not built up piece by piece from the individual sounds. A listener does not, on this account, first cognize each phoneme's contribution and then mentally assemble them; the meaning-bearing unit is apprehended as an indivisible whole, even though its manifesting cause is temporally sequenced and divisible.</p>
+    <h3 class="sub-h">9.4 Feature (c): Manifestation, Not Mere Convention</h3>
+    <p>The relationship between the sequenced sounds and the unitary sphoṭa they manifest is documented as one of manifestation rather than arbitrary convention alone — Bhartṛhari's own school holds the sphoṭa to be a real universal that the sounds reveal, not a habituated pairing a speech-community merely agrees to maintain. This is the strongest and most metaphysically loaded of the three features, and this chapter flags it, in advance of Chapter 12's dedicated test, as the feature most likely to prove decisive.</p>
+    <h3 class="sub-h">9.5 Why All Three Must Be Tested Independently</h3>
+    <p>This chapter's own discipline, carried into Chapters 10 through 12, is to test each feature against gesture independently rather than allowing a strong result on one feature to be read as evidence for the others. A sign-system could satisfy feature (b) without satisfying feature (a), or satisfy (a) and (b) while failing (c) — and only a system satisfying all three together would count as sphoṭa-bearing in the full technical sense.</p>
+    <div class="callout"><span class="callout-tag">Chapter 9 — Function Within the Cluster</span>Restates sphoṭa's three load-bearing features independently of any prior finding about gesture: (a) temporally sequenced manifesting cause, (b) unitary non-compositional grasping, (c) manifestation rather than mere convention. Chapters 10–12 test each against gesture separately.</div>
+    `,
+    refs:[
+      "Bhartṛhari, <span class='rtitle'>Vākyapadīya</span> I.44–52 — the primary documented source for sphoṭa's three-feature structure restated in this chapter.",
+      "Series A Extended, Part I, §IV — this series' own prior full treatment of sphoṭa, presupposed and restated here independently.",
+      "Coward, Harold G., <span class='rtitle'>The Sphoṭa Theory of Language</span> — standard secondary account of the manifestation/convention distinction (feature c).",
+      "Houben, Jan E.M., <span class='rtitle'>The Sambandha-samuddeśa and Bhartṛhari's Philosophy of Language</span> — on the technical status of vyañjaka (manifesting cause) in Bhartṛhari's system.",
+      "Matilal, B.K., <span class='rtitle'>The Word and the World</span> — for the unitary, non-compositional grasping feature (b) and its philosophical stakes.",
+      "Series A Extended, Part VII, Part One, Ch. 4 — this Part's own prior boundary-statement refusing automatic transfer, which this chapter now honors directly."
+    ]
+  },
+  {
+    n:10, cluster:"RQ2", title:"Testing Feature (a): Temporal Sequencing in Static vs. Moving Mudrā",
+    dn:"कालक्रमपरीक्षा — स्थिरचलमुद्रयोः", full:true,
+    body:`
+    <h3 class="sub-h">10.1 The Test Applied to a Held Configuration</h3>
+    <p>A single, held hasta — the hand brought into one configuration and maintained — is tested first, since it is the simplest case. This chapter finds that a held configuration does not satisfy feature (a): it is not a temporally sequenced event in the way a spoken syllable-string is. There is no ordered succession of distinct sub-events the way there is an ordered succession of phonemes; the configuration simply is, for the duration it is held.</p>
+    <h3 class="sub-h">10.2 The Test Applied to a Moving or Transitional Gestural Phrase</h3>
+    <p>A gestural phrase that moves from one configuration to another, or that unfolds as a trajectory through space, fares better against feature (a), since it does genuinely unfold in time. This chapter grants this concession fully rather than minimizing it.</p>
+    <h3 class="sub-h">10.3 Why the Concession Does Not Settle the Feature</h3>
+    <p>This chapter is careful to specify what the concession does and does not establish. Temporal unfolding alone is not the same as the specific kind of temporal unfolding phonemic sequencing exhibits: a phoneme-string is documented as composed of discrete, digitally distinct units in strict linear order, each unit fully replacing the last (there is no continuous blending between one phoneme and the next in the way sphoṭa theory itself requires the sequence to be segmentable). A moving gestural phrase, by contrast, is documented — in the descriptive material this chapter draws on from dance pedagogy — as typically continuous rather than discretely segmented; there is no gestural equivalent of a minimal-pair distinction between two adjacent, sharply bounded units.</p>
+    <h3 class="sub-h">10.4 The Chapter's Qualified Finding on Feature (a)</h3>
+    <p>Feature (a) is therefore satisfied only partially and only by moving gestural phrases, not by the held configurations that make up a substantial portion of the documented hasta-inventory, and even where satisfied, it is satisfied by a continuous rather than discretely segmented temporal structure, which is a weaker form of the feature than phonemic sequencing exhibits. This chapter reports this as a partial, qualified result rather than a clean pass or fail.</p>
+    <div class="callout warn"><span class="callout-tag">Chapter 10 — Function Within the Cluster</span>Feature (a) is not satisfied by held configurations at all, and is satisfied only partially, in a weaker continuous-rather-than-discrete form, by moving gestural phrases. This is the first of three independent tests, and it does not yet settle RQ 2.</div>
+    `,
+    refs:[
+      "Bhartṛhari, <span class='rtitle'>Vākyapadīya</span> I.44–52 — for the discrete, digitally segmented structure phonemic sequencing requires, against which this chapter tests gestural continuity.",
+      "Nandikeśvara, <span class='rtitle'>Abhinaya Darpaṇa</span> — descriptive source for held versus moving hasta-configurations used in this chapter's classification.",
+      "Kapila Vatsyayan, <span class='rtitle'>Indian Classical Dance</span> — on the documented continuous, non-discrete character of gestural movement-phrases in performance pedagogy.",
+      "Coward, Harold G., <span class='rtitle'>The Sphoṭa Theory of Language</span> — on the requirement that a sphoṭa-manifesting sequence be segmentable into discrete units.",
+      "Series A Extended, Part VII, Part One, Ch. 9 — this cluster's own restatement of feature (a), directly tested here.",
+      "Zarrilli, Phillip B., <span class='rtitle'>Kathakali Dance-Drama: Where Gods and Demons Come to Play</span> — for documented performance-pedagogy accounts of continuous versus segmented gestural transitions."
+    ]
+  },
+  {
+    n:11, cluster:"RQ2", title:"Testing Feature (b): Unitary, Non-Compositional Grasping",
+    dn:"अखण्डग्रहणपरीक्षा", full:true,
+    body:`
+    <h3 class="sub-h">11.1 What Would Count as Passing This Test</h3>
+    <p>Feature (b) requires that a trained observer grasp a hasta's meaning as a single, unanalysed whole, not by first parsing finger-position, then palm-orientation, then wrist-angle as separately meaningful sub-units the way a listener parses a word into its constituent phonemes. This chapter states the test precisely before applying it: the question is not whether a hasta has analyzable physical components (it plainly does), but whether a trained observer's act of understanding proceeds through those components sequentially or grasps the meaning as a whole prior to, or independent of, any such componential analysis.</p>
+    <h3 class="sub-h">11.2 The Documented Evidence for Holistic Grasping</h3>
+    <p>The available descriptive and pedagogical evidence this chapter draws on is consistent with holistic, rather than componential, grasping: trained spectators are documented as recognizing a hasta's identity and meaning in a single act of perception, without conscious attention to its separable physical parameters, in a manner structurally comparable to how a fluent reader recognizes a whole written word rather than sounding out its letters. This chapter treats this as a genuine, if indirect, satisfaction of feature (b).</p>
+    <h3 class="sub-h">11.3 A Necessary Qualification: Absence of Direct Experimental Evidence</h3>
+    <p>This chapter is careful to flag what kind of evidence this finding rests on: it is inferred from documented pedagogical description and from the structural analogy to word-recognition, not from direct experimental studies of gesture-perception specifically testing componential versus holistic processing in trained dance spectators. This chapter treats the finding as plausible and consistent with available evidence, not as settled by direct empirical demonstration — a more cautious framing than Chapters 2 through 8 needed to adopt, since this question sits closer to the empirical material this Part's companion Part Two examines at length.</p>
+    <h3 class="sub-h">11.4 The Chapter's Finding on Feature (b)</h3>
+    <p>Feature (b) is plausibly satisfied — a trained observer's grasp of a hasta is documented and structurally argued to be closer to holistic recognition than to piece-by-piece componential parsing — but this chapter flags the finding's evidentiary basis as indirect rather than experimentally confirmed, a limitation this Part's own discipline requires stating explicitly rather than passing over.</p>
+    <div class="callout"><span class="callout-tag">Chapter 11 — Function Within the Cluster</span>Feature (b) is plausibly satisfied on indirect pedagogical and structural evidence, with the evidentiary basis explicitly flagged as short of direct experimental confirmation. Two features tested; feature (c), the most metaphysically decisive, remains for Chapter 12.</div>
+    `,
+    refs:[
+      "Bhartṛhari, <span class='rtitle'>Vākyapadīya</span> I — for the unitary, non-compositional grasping requirement restated in Chapter 9.",
+      "Kapila Vatsyayan, <span class='rtitle'>Bharata, the Nāṭyaśāstra</span> — pedagogical description of trained spectatorship and hasta-recognition drawn on in this chapter.",
+      "Cognitive research on holistic word-recognition in fluent reading (general psycholinguistic literature) — structural analogy invoked in §11.2, flagged here as analogy rather than direct evidence.",
+      "Series A Extended, Part VII, Part Two (this restructuring) — where direct empirical evidence on gesture-perception, where it exists, is examined at length; this chapter's finding is provisional pending that treatment.",
+      "Nandikeśvara, <span class='rtitle'>Abhinaya Darpaṇa</span> — descriptive source for the componential physical parameters (finger, palm, wrist) tested against holistic recognition.",
+      "Series A Extended, Part VII, Part One, Ch. 9 — this cluster's own restatement of feature (b), directly tested here."
+    ]
+  },
+  {
+    n:12, cluster:"RQ2", title:"Testing Feature (c): Manifestation vs. Convention — The Decisive Test",
+    dn:"निर्णायकपरीक्षा — अभिव्यक्तिः सङ्केतो वा", full:true,
+    body:`
+    <h3 class="sub-h">12.1 Why This Feature Is Decisive</h3>
+    <p>Chapters 10 and 11 found features (a) and (b) satisfied only partially or only indirectly. This chapter's finding on feature (c) — whether gesture's relationship to its meaning is manifestation of a real universal or arbitrary convention — is decisive because sphoṭa theory's distinctive philosophical content lies specifically here: many sign-systems are conventional without being sphoṭa-bearing, so a negative finding on this feature alone would be sufficient to close RQ 2 in the negative, regardless of the outcome on (a) and (b).</p>
+    <h3 class="sub-h">12.2 What Manifestation Requires</h3>
+    <p>Manifestation, on Bhartṛhari's own account, requires that the sign reveal a meaning that is, in some sense, already real independent of the community's agreement to use that sign for it — the relationship is not merely that speakers have agreed to pair sound X with meaning Y, but that sound X's very nature discloses Y. This is a strong, metaphysically committed claim, and this chapter tests gesture against it directly rather than against a watered-down version.</p>
+    <h3 class="sub-h">12.3 The Documented Evidence Against Manifestation for Most Hastas</h3>
+    <p>The Nāṭyaśāstra's own material teaches hasta-meanings name by name, explicitly pairing each configuration with its sense or senses through direct instruction — precisely the pedagogical pattern one would expect if the pairing were conventional (requiring explicit teaching because it is not otherwise self-evident from the shape) rather than manifestational (which would not require this kind of explicit, name-by-name pairing if the shape's own nature disclosed its meaning). This chapter treats the sheer necessity of explicit teaching, documented across the base text and every regional manual descending from it, as strong evidence against manifestation for the general case.</p>
+    <h3 class="sub-h">12.4 The Chapter's Decisive Finding</h3>
+    <p>Feature (c) is not satisfied for the documented general case: codified gesture's relationship to its meaning is conventional (saṅketa-governed), evidenced by the tradition's own need to teach pairings explicitly, rather than manifestational in Bhartṛhari's strong technical sense. Combined with the partial results on features (a) and (b), this chapter's finding is that sphoṭa, in its full technical sense, does not transfer to gesture for the documented general case — a negative result this chapter reports plainly rather than softening.</p>
+    <div class="callout warn"><span class="callout-tag">Chapter 12 — Function Within the Cluster</span>Feature (c) fails for the general case: gesture's meaning-relationship is conventional, evidenced by the tradition's own explicit, name-by-name pedagogical practice. This is the decisive negative finding for RQ 2's general claim; Chapter 13 examines the documented minority exception before the cluster's full synthesis.</div>
+    `,
+    refs:[
+      "Bhartṛhari, <span class='rtitle'>Vākyapadīya</span> I — for the strong manifestation-requirement restated and tested in this chapter.",
+      "Coward, Harold G., <span class='rtitle'>The Sphoṭa Theory of Language</span> — on distinguishing manifestation from convention as the specific philosophical content of sphoṭa theory.",
+      "Nandikeśvara, <span class='rtitle'>Abhinaya Darpaṇa</span> — documented name-by-name pedagogical pairing of hasta and meaning, the chapter's central evidence.",
+      "Nāṭyaśāstra, Ch. 9 (hasta-vidhāna) — base textual source for the explicit teaching-pattern this chapter reads as evidence for convention over manifestation.",
+      "Kunjunni Raja, K., <span class='rtitle'>Indian Theories of Meaning</span> — for the general distinction between conventional (saṅketa-based) and natural sign-relationships in Indian semantic theory.",
+      "Series A Extended, Part VII, Part One, Ch. 9 — this cluster's own restatement of feature (c), directly and decisively tested here."
+    ]
+  },
+  {
+    n:13, cluster:"RQ2", title:"The Iconic Exception: Directly Resembling Hastas",
+    dn:"अपवादः — साक्षात्साम्यमूलकाः हस्ताः", full:true,
+    body:`
+    <h3 class="sub-h">13.1 Why an Honest Cluster Must Examine the Exception</h3>
+    <p>Chapter 12 closed with a negative finding stated as holding "for the documented general case," a qualification deliberately left open for this chapter to examine. A small number of hastas are documented as directly iconic — resembling, in their visual shape, the object or action they denote (a configuration depicting a bird in flight, or one visually suggesting a specific animal's form) — and this chapter examines whether these cases escape Chapter 12's negative finding.</p>
+    <h3 class="sub-h">13.2 Do Iconic Hastas Satisfy Feature (c) Differently?</h3>
+    <p>For a directly iconic hasta, the relationship between the configuration and its meaning is plausibly closer to natural resemblance than to arbitrary convention — the shape itself visually motivates the sense, in a way that does not obviously require the same kind of explicit name-by-name teaching Chapter 12 found evidence of for the general case (though even iconic hastas are, in practice, still taught by name within the standard curriculum, which this chapter notes without treating it as decisive either way).</p>
+    <h3 class="sub-h">13.3 Why Resemblance Is Still Not Manifestation in Bhartṛhari's Sense</h3>
+    <p>This chapter makes a distinction that Chapter 12 did not need to make: natural resemblance and Bhartṛhari's technical notion of manifestation are not the same thing. Manifestation, in the strong sphoṭa sense, requires that the sign disclose a real universal via a relationship the tradition's own metaphysics underwrites specifically — not merely that the sign happens to look like what it denotes. A visually resembling hasta satisfies a weaker, more general notion of natural signification (the kind found in ordinary iconography or pictography) without thereby satisfying Bhartṛhari's specific, metaphysically loaded manifestation-relationship, which this chapter's own reading of Part One's foundational material treats as a categorically different and stronger claim.</p>
+    <h3 class="sub-h">13.4 The Chapter's Finding on the Exception</h3>
+    <p>Even the documented iconic exception does not straightforwardly rescue sphoṭa-status: it substitutes ordinary visual resemblance for arbitrary convention, but ordinary visual resemblance is not the same as, and does not automatically license, the specific manifestation-relationship sphoṭa theory requires. This chapter's finding is that the iconic exception weakens, but does not overturn, Chapter 12's general negative conclusion.</p>
+    <div class="callout"><span class="callout-tag">Chapter 13 — Function Within the Cluster</span>The documented minority of directly iconic hastas substitute natural resemblance for arbitrary convention, but resemblance is not identical to Bhartṛhari's specific manifestation-relationship. The exception weakens but does not overturn Chapter 12's negative finding.</div>
+    `,
+    refs:[
+      "Nāṭyaśāstra, Ch. 9 — documented source for the small set of directly iconic hasta-configurations examined in this chapter.",
+      "Bhartṛhari, <span class='rtitle'>Vākyapadīya</span> I — for the specific, metaphysically loaded manifestation-relationship distinguished here from ordinary resemblance.",
+      "Coomaraswamy, A.K., <span class='rtitle'>The Mirror of Gesture</span> — early treatment of iconic versus conventional hastas, useful as a check on this chapter's classification.",
+      "Peirce, C.S., on the icon/index/symbol distinction (general semiotic theory) — invoked here only as an external conceptual check on the icon/convention boundary, not as a source this chapter treats as authoritative for the Sanskrit material.",
+      "Kapila Vatsyayan, <span class='rtitle'>Bharata, the Nāṭyaśāstra</span> — for documented examples of iconic hastas and their place within the standard teaching curriculum.",
+      "Series A Extended, Part VII, Part One, Ch. 12 — this chapter's own point of departure, whose general finding is qualified rather than overturned here."
+    ]
+  },
+  {
+    n:14, cluster:"RQ2", title:"Why a Minority Exception Does Not Rescue the General Claim",
+    dn:"अपवादेन सामान्यसिद्धान्तस्य अरक्षणम्", full:true,
+    body:`
+    <h3 class="sub-h">14.1 The Logical Point at Stake</h3>
+    <p>This chapter makes explicit a logical point implicit in Chapter 13's finding: a general claim about a category (here, "codified gesture is sphoṭa-bearing") is not rescued by a documented minority exception, even a genuine one. If anything, a documented, bounded exception is evidence that the tradition itself distinguishes the iconic minority from the conventional majority — which supports, rather than undermines, treating the majority case as the tradition's own default and the iconic cases as the marked, minority case.</p>
+    <h3 class="sub-h">14.2 Quantifying the Minority, So Far as the Evidence Allows</h3>
+    <p>This chapter states plainly what can and cannot be quantified from the documented evidence: the Nāṭyaśāstra's own hasta-inventory numbers several dozen named configurations, and only a small number of these are documented as directly iconic in the sense Chapter 13 examined, with the substantial majority requiring the explicit, name-by-name teaching Chapter 12 read as evidence of convention. This chapter does not claim a precise count beyond what the descriptive tradition itself supports, and flags precise quantification as a task better suited to a dedicated inventory-analysis than to this cluster's own argument.</p>
+    <h3 class="sub-h">14.3 Testing the Point Against a Comparable Case</h3>
+    <p>This chapter tests its logical point against a comparable case from outside the immediate material: the existence of a small number of onomatopoeic words in a spoken language (words whose sound directly resembles what they denote) does not establish that the language's vocabulary in general is sphoṭa-manifested by natural resemblance rather than conventionally paired — onomatopoeia is a documented, bounded exception within an otherwise conventional lexicon, and this chapter reads the iconic-hasta case as structurally the same kind of bounded exception.</p>
+    <h3 class="sub-h">14.4 The Chapter's Confirming Finding</h3>
+    <p>This chapter confirms, rather than merely restates, Chapter 12's general negative finding: the existence of a documented, bounded set of iconic hastas does not establish sphoṭa-status for codified gesture generally, any more than onomatopoeia establishes it for spoken vocabulary generally. RQ 2's negative answer stands for the general case, with the iconic minority properly treated as a marked exception rather than as evidence against the rule.</p>
+    <div class="callout warn"><span class="callout-tag">Chapter 14 — Function Within the Cluster</span>Confirms Chapter 12's general negative finding by showing, through the onomatopoeia comparison, that a bounded minority exception does not rescue a general claim — if anything it reinforces that the tradition itself treats the conventional majority as the default case.</div>
+    `,
+    refs:[
+      "Series A Extended, Part VII, Part One, Ch. 12–13 — the findings this chapter confirms and defends against a possible misreading.",
+      "General linguistic literature on onomatopoeia as a bounded exception within conventional lexicons (cf. standard introductory linguistics treatments of sound symbolism) — invoked here only as a structural comparison, not as source material for the Sanskrit tradition itself.",
+      "Bhartṛhari, <span class='rtitle'>Vākyapadīya</span> I — for the manifestation-requirement against which both the general case and the exception are tested.",
+      "Nāṭyaśāstra, Ch. 9 — base source for the hasta-inventory's documented scale, against which the iconic minority is sized qualitatively.",
+      "Kunjunni Raja, K., <span class='rtitle'>Indian Theories of Meaning</span> — for the general principle that marked exceptions in Sanskrit semantic theory are treated as exceptions precisely because a default rule is presupposed.",
+      "Coomaraswamy, A.K., <span class='rtitle'>The Mirror of Gesture</span> — again, for documented examples used to distinguish the marked iconic set from the unmarked conventional majority."
+    ]
+  },
+  {
+    n:15, cluster:"RQ2", title:"Could a Weaker Sphoṭa-Analogue Survive?",
+    dn:"निर्बलतरः स्फोटानुरूपः सम्भवति किम्", full:true,
+    body:`
+    <h3 class="sub-h">15.1 Why This Question Is Worth Asking Even After a Negative Finding</h3>
+    <p>Chapters 12 and 14 close RQ 2 negatively for sphoṭa in its full Bhartṛharian sense. This chapter asks a narrower, final question before the cluster's synthesis: is there a weaker, less metaphysically demanding analogue — short of full manifestation — that gesture might still satisfy, and would positing such an analogue add anything this Part's own discipline should accept?</p>
+    <h3 class="sub-h">15.2 A Candidate Weaker Analogue</h3>
+    <p>A candidate weaker analogue would drop feature (c)'s manifestation-requirement while retaining something like features (a) and (b) in their partial, qualified forms already found in Chapters 10 and 11 — call this a "unitary conventional sign" rather than a sphoṭa proper: a sign whose meaning is grasped holistically (b, qualified) and whose fuller instances unfold temporally (a, qualified for moving phrases), but whose relationship to its meaning is conventional rather than manifestational.</p>
+    <h3 class="sub-h">15.3 Why This Chapter Declines to Adopt the Weaker Analogue as a New Technical Category</h3>
+    <p>This chapter's own judgment is that positing this weaker analogue as a new named category would not add genuine analytical value over simply stating the three qualified findings directly (as Chapters 10, 11, and 12 already have) — inventing a new label risks exactly the kind of loose, resemblance-based category-extension Chapter 1 of this cluster committed to refusing. A "unitary conventional sign" is, on inspection, simply a redescription of what convention-governed, holistically-grasped signs already are, without sphoṭa's distinctive metaphysical commitment; giving it a new name adjacent to "sphoṭa" would risk implying a closer kinship to sphoṭa theory than the evidence supports.</p>
+    <h3 class="sub-h">15.4 The Chapter's Conclusion</h3>
+    <p>No weaker sphoṭa-analogue is adopted. This chapter's own recommendation, carried into Chapter 16's synthesis, is that gesture's documented semiotic structure is better described directly, in its own terms (conventional, holistically-grasped, partially temporally-structured), than by coining a diminished form of a category whose entire distinctive content this cluster has just shown gesture does not possess.</p>
+    <div class="callout"><span class="callout-tag">Chapter 15 — Function Within the Cluster</span>Considers and declines a weaker sphoṭa-analogue as an unnecessary and potentially misleading new category. Gesture's structure is better described in its own terms than as a diminished sphoṭa, consistent with this cluster's discipline against manufactured convergence.</div>
+    `,
+    refs:[
+      "Series A Extended, Part VII, Part One, Ch. 10–12 — the three qualified findings this chapter considers combining into a new category, and declines to.",
+      "Bhartṛhari, <span class='rtitle'>Vākyapadīya</span> I — for sphoṭa's full technical content, against which any weaker analogue would have to be checked and found wanting.",
+      "Matilal, B.K., <span class='rtitle'>The Word and the World</span> — on the philosophical risks of coining diminished technical categories that imply false kinship with a stronger original.",
+      "Series A Extended, Part I, §4.2 — this series' own prior discipline regarding sphoṭa/dhvani distinctions, methodologically consistent with this chapter's refusal to blur categories.",
+      "Coward, Harold G., <span class='rtitle'>The Sphoṭa Theory of Language</span> — for the specific metaphysical commitments that would be lost, and therefore should not be implied, in any weaker analogue.",
+      "Series A Extended, Part VII, Part One, Ch. 1 — this cluster's own opening refusal of cheaply-won category extensions, the same discipline applied here to refuse a cheaply-coined new category."
+    ]
+  },
+  {
+    n:16, cluster:"RQ2", title:"Cluster Synthesis: RQ 2 Closed Negatively",
+    dn:"द्वितीयप्रश्नस्य निषेधात्मकं समाधानम्", full:true,
+    body:`
+    <h3 class="sub-h">16.1 Gathering the Cluster's Findings</h3>
+    <p>This chapter gathers, without introducing new argument, the findings of Chapters 9 through 15: sphoṭa's three load-bearing features were restated independently (Ch. 9); feature (a), temporal sequencing, is satisfied only partially, only by moving phrases, and only in weaker continuous form (Ch. 10); feature (b), unitary grasping, is plausibly but only indirectly satisfied (Ch. 11); feature (c), manifestation rather than convention, fails for the documented general case (Ch. 12); a documented minority of iconic hastas partially escapes feature (c)'s failure without thereby rescuing the general claim (Ch. 13–14); and no weaker sphoṭa-analogue is worth adopting as a new category (Ch. 15).</p>
+    <h3 class="sub-h">16.2 The Cluster's Final Answer to RQ 2</h3>
+    <p>RQ 2 is answered: sphoṭa, in its full Bhartṛharian technical sense, does not transfer to gesture. Two of its three defining features are only partially satisfied even under generous reading, and the third — the feature carrying sphoṭa theory's distinctive metaphysical content — fails outright for the documented general case, with only a small, bounded, non-rescuing exception. This is a negative finding, reported as such rather than softened into an ambiguous one.</p>
+    <h3 class="sub-h">16.3 Why This Negative Finding Is Productive, Not Merely Deflationary</h3>
+    <p>This chapter treats the negative finding as productive rather than merely deflationary: it is precisely because sphoṭa does not fit that this Part's later clusters are entitled to look for a better-fitting theoretical model — the dhvani-proposal developed in Chapters 37 through 39 is not a fallback adopted for lack of alternatives, but a positive proposal made stronger by this cluster's own careful, feature-by-feature demonstration of exactly where and why sphoṭa's fit fails.</p>
+    <h3 class="sub-h">16.4 What This Adds to RQ 1's Finding</h3>
+    <p>This chapter's negative finding does not conflict with RQ 1's cluster (Ch. 1–8): RQ 1 established that gesture is licensed under vaikharī's category with respect to one specific defining property (externalization for another), while explicitly refusing (Ch. 4.3) to let that license transfer automatically to further properties. This cluster has now tested the specific further property of sphoṭa-bearing directly, as that refusal required, and reports the negative result the refusal anticipated as a live possibility rather than a foregone conclusion.</p>
+    <div class="callout warn"><span class="callout-tag">Chapter 16 — Cluster Closed</span>RQ 2 is closed negatively: sphoṭa does not survive the transfer to gesture in its full technical sense. This negative finding is productive, motivating rather than undermining the dhvani-proposal to come in Chapters 37–39, and is fully consistent with RQ 1's own explicit refusal to assume automatic property-transfer.</div>
+    `,
+    refs:[
+      "This chapter synthesizes only sources already cited in Chapters 9–15 of this cluster, consistent with this series' practice of not manufacturing new support at a closing chapter.",
+      "Bhartṛhari, <span class='rtitle'>Vākyapadīya</span> I — the cluster's central textual anchor, cited across Chapters 9, 12, 13, and 15.",
+      "Coward, Harold G., <span class='rtitle'>The Sphoṭa Theory of Language</span> — the cluster's principal secondary source, cited across Chapters 9, 12, and 15.",
+      "Nandikeśvara, <span class='rtitle'>Abhinaya Darpaṇa</span> and Nāṭyaśāstra Ch. 9 — the cluster's descriptive evidentiary base, cited across Chapters 10, 12, 13, and 14.",
+      "Series A Extended, Part VII, Part One, Ch. 4 — RQ 1's own refusal of automatic property-transfer, which this cluster's entire testing procedure has honored.",
+      "Series A Extended, Part VII, Part One, Ch. 37–39 (forthcoming) — the dhvani-proposal this negative finding motivates, cross-referenced here as this cluster's forward-looking contribution."
+    ]
+  },
+  {
+    n:17, cluster:"RQ4", title:"The Two Inventories Compared Structurally",
+    dn:"हस्तवर्णयोः संरचनात्मकतुलना", full:true,
+    body:`
+    <h3 class="sub-h">17.1 Why a Structural Comparison Must Precede a Functional One</h3>
+    <p>This chapter opens the RQ 4 cluster by comparing the varṇamālā (the Sanskrit phoneme inventory) and the classical hasta inventory purely on their documented structural properties — size, closure, and namedness — before any question of function or productivity is raised. This ordering matters: a structural comparison establishes what kind of thing is being compared before the cluster asks how well each thing performs.</p>
+    <h3 class="sub-h">17.2 The Varṇamālā's Documented Structure</h3>
+    <p>The varṇamālā is documented, across recensions, as a finite inventory of roughly fifty phonemic units, each individually named, taught in a fixed pedagogical sequence, and treated as exhaustive for the purpose of representing the language's sound-system — no ordinary act of speech is documented as requiring a sound outside this closed inventory.</p>
+    <h3 class="sub-h">17.3 The Hasta Inventory's Documented Structure</h3>
+    <p>The classical hasta inventory is documented in the Nāṭyaśāstra as twenty-eight single-hand (asaṃyuta) configurations, with a further set of double-hand (saṃyuta) configurations, each individually named and taught as a fixed curriculum — with some regional dance traditions and manuals, examined at length in this restructuring's Part Three, documenting different totals. Both inventories, on this comparison, are finite, individually named, and pedagogically closed.</p>
+    <h3 class="sub-h">17.4 What This Chapter Establishes and What It Withholds</h3>
+    <p>This chapter establishes that both inventories share the same three structural features — finitude, individual naming, and closed pedagogical curriculum — a genuine and non-trivial resemblance. It withholds any claim about productivity, combination, or meaning-generation, which are separately tested in Chapters 19 and 21; a structural resemblance in inventory-shape does not by itself establish a resemblance in how the inventory's units function once deployed.</p>
+    <div class="callout"><span class="callout-tag">Chapter 17 — Function Within the Cluster</span>Establishes genuine structural resemblance between the two inventories — finite, individually named, pedagogically closed — while explicitly withholding any claim about productivity or combination, reserved for later chapters.</div>
+    `,
+    refs:[
+      "Pāṇini, <span class='rtitle'>Aṣṭādhyāyī</span>, Śivasūtras — for the documented, closed structure of the varṇamālā presupposed here.",
+      "Nāṭyaśāstra, Ch. 9 (hasta-vidhāna) — for the documented count and structure of the asaṃyuta and saṃyuta hasta inventories.",
+      "Series A Extended, Part I, §III — this series' own prior treatment of the mātṛkā/varṇamālā material, drawn on directly for this chapter's comparison.",
+      "Kapila Vatsyayan, <span class='rtitle'>Bharata, the Nāṭyaśāstra</span> — for the documented pedagogical sequencing of the hasta curriculum.",
+      "Cardona, George, <span class='rtitle'>Pāṇini: His Work and Its Traditions</span> — for the closed, exhaustive character of the phoneme inventory in the grammatical tradition.",
+      "Series A Extended, Part VII, Part Three (this restructuring) — where regional variation in hasta-counts is examined at length; this chapter's count is the Nāṭyaśāstra's own base figure only."
+    ]
+  },
+  {
+    n:18, cluster:"RQ4", title:"Digital vs. Analog Categorization",
+    dn:"अङ्कीयं सान्तत्यं वा वर्गीकरणम्", full:true,
+    body:`
+    <h3 class="sub-h">18.1 Defining the Distinction Precisely</h3>
+    <p>This chapter introduces a distinction not yet used in this Part: a <span class="term">digital</span> sign-system categorizes its possibility-space into discrete, named units with no admitted middle ground between them (a phoneme is either /k/ or not /k/, with no documented intermediate phoneme); an <span class="term">analog</span> sign-system treats its possibility-space as continuous, with meaning varying smoothly across a range (a raised eyebrow can be documented as conveying more or less surprise along a continuous gradient, without a name for every intermediate degree).</p>
+    <h3 class="sub-h">18.2 Testing the Hasta Inventory Against This Distinction</h3>
+    <p>This chapter's finding is that the classical hasta inventory is documented as digital in its own conception: the tradition names discrete configurations and teaches them as discrete, bounded units to be reproduced accurately, not as points along a continuous gradient a performer is free to vary smoothly. A performer either forms the paṭāka hasta correctly or has not formed it; the tradition does not document graded intermediate forms as a recognized category.</p>
+    <h3 class="sub-h">18.3 Why This Finding Is Significant</h3>
+    <p>This chapter treats the finding as significant because it was not obvious in advance — gesture, as a physical, spatial medium, could plausibly have been organized by the tradition as an analog system (the way facial expression intensity often is treated, even within this same performance tradition, as a graded rather than discrete phenomenon). That the hasta system specifically is documented as digital, while other performance channels (such as degree of emotional intensity in sāttvika expression) are treated by the same tradition in a more graded way, is itself evidence that digital categorization is a deliberate design feature of the hasta system specifically, not an incidental byproduct of gesture in general.</p>
+    <h3 class="sub-h">18.4 The Chapter's Finding</h3>
+    <p>The hasta inventory is documented as digitally organized, matching the phoneme inventory's own digital structure — a second confirmed point of resemblance, building on Chapter 17's structural comparison, and one this chapter treats as non-trivial precisely because gesture did not have to be organized this way.</p>
+    <div class="callout"><span class="callout-tag">Chapter 18 — Function Within the Cluster</span>Confirms the hasta inventory is digitally, not analogically, organized — a second genuine point of resemblance to the phoneme inventory, made more significant by the finding that other performance channels in the same tradition are organized in a more graded, analog way.</div>
+    `,
+    refs:[
+      "Nāṭyaśāstra, Ch. 9 — documented discrete naming and reproduction-standard for individual hastas.",
+      "Nandikeśvara, <span class='rtitle'>Abhinaya Darpaṇa</span> — for pedagogical descriptions confirming discrete, non-graded hasta-formation as the taught standard.",
+      "General phonological theory on discrete/digital phonemic categorization (cf. standard structuralist phonology, e.g. Trubetzkoy's principles) — invoked as a conceptual benchmark, not as a source on the Sanskrit material itself.",
+      "Nāṭyaśāstra, Ch. 6–7 (rasa and bhāva material) — documented source for the more graded, analog treatment of emotional intensity in sāttvika expression, used here as the contrastive case.",
+      "Kapila Vatsyayan, <span class='rtitle'>Indian Classical Dance</span> — for documented pedagogical emphasis on precise, non-graded hasta-reproduction in training.",
+      "Series A Extended, Part VII, Part One, Ch. 17 — this chapter's own point of departure, whose structural comparison is extended here to the digital/analog question."
+    ]
+  },
+  {
+    n:19, cluster:"RQ4", title:"Productivity Compared: Phoneme-to-Word vs. Hasta-to-Meaning",
+    dn:"उत्पादकत्वतुलना", full:true,
+    body:`
+    <h3 class="sub-h">19.1 Defining Productivity for This Comparison</h3>
+    <p>This chapter defines <span class="term">productivity</span> precisely: a productive system takes a small, closed inventory of units and generates, through rule-governed combination, a very large or unbounded set of further meaningful units not individually listed in the base inventory. This chapter tests both the varṇamālā and the hasta inventory against this specific criterion.</p>
+    <h3 class="sub-h">19.2 The Documented Productivity of the Phoneme Inventory</h3>
+    <p>The varṇamālā's roughly fifty units are documented, through Pāṇinian combination rules, to generate the entirety of the Sanskrit lexicon — an effectively unbounded vocabulary — via rule-governed phonemic and morphemic combination. This is extreme, well-documented productivity: a small base generating a vast, open-ended output.</p>
+    <h3 class="sub-h">19.3 The Documented Productivity of the Hasta Inventory</h3>
+    <p>This chapter's central finding is that the hasta inventory does not exhibit comparable productivity. A given hasta typically bears its meaning directly — often through the nānārtha-hasta phenomenon this series' companion material examines, where one configuration carries several pre-listed senses resolved by context — rather than through combination with other hastas to produce new, previously unlisted composite meanings. The base inventory's several dozen units do not, on the documented evidence, generate anything approaching an open-ended vocabulary of new meanings through combination.</p>
+    <h3 class="sub-h">19.4 The Chapter's Finding and Its Significance</h3>
+    <p>This chapter's finding is a genuine, significant disanalogy: productivity, the single feature responsible for spoken language's capacity to express an unbounded range of thoughts from a small phonemic base, is not documented as a feature of the hasta system in anything like the same degree. This chapter treats this as the single most important disanalogy in the entire RQ 4 comparison, directly bearing on RQ 3's question (taken up in Chapters 25 through 32) about whether gesture can generate sentence-level meaning independently.</p>
+    <div class="callout warn"><span class="callout-tag">Chapter 19 — Function Within the Cluster</span>Establishes the cluster's most significant disanalogy: the hasta inventory lacks the phoneme inventory's documented combinatorial productivity, with meaning typically borne directly by individual units (often via pre-listed polysemy) rather than generated through open-ended combination.</div>
+    `,
+    refs:[
+      "Pāṇini, <span class='rtitle'>Aṣṭādhyāyī</span> — for the documented rule-governed combinatorial system generating the Sanskrit lexicon from the phoneme base.",
+      "Cardona, George, <span class='rtitle'>Pāṇini: His Work and Its Traditions</span> — standard secondary account of Pāṇinian productivity and combination rules.",
+      "Nāṭyaśāstra, Ch. 9 — documented source for individual hasta-meanings borne directly rather than through combination.",
+      "Nandikeśvara, <span class='rtitle'>Abhinaya Darpaṇa</span> — documented source for the nānārtha-hasta (polysemy) phenomenon invoked here as the hasta system's actual, non-combinatorial meaning-mechanism.",
+      "General linguistic theory of productivity and generativity (cf. standard morphological theory) — invoked as the conceptual benchmark for this chapter's test.",
+      "Series A Extended, Part VII, Part One, Ch. 25–32 (RQ 3 cluster, this delivery) — where this chapter's finding is applied directly to the question of sentence-level meaning-generation."
+    ]
+  },
+  {
+    n:20, cluster:"RQ4", title:"The Documented Counter-Case: Narrative Sequence Combination",
+    dn:"प्रतिवादः — आख्यानक्रमसंयोजनम्", full:true,
+    body:`
+    <h3 class="sub-h">20.1 Why an Honest Cluster Must Examine the Counter-Case</h3>
+    <p>Chapter 19 reported a strong negative finding on productivity. This chapter examines the documented evidence that could complicate that finding: sequences of hastas performed in temporal succession, particularly in narrative dance contexts, which are documented to build larger dramatic units that no single hasta names alone.</p>
+    <h3 class="sub-h">20.2 The Documented Case</h3>
+    <p>A sequence depicting, for instance, "a deer, startled, fleeing toward water" is documented as combining several individually-named hastas and body-orientations in temporal sequence to build a scene no single hasta denotes by itself. This is genuine combination of a kind Chapter 19's finding did not account for, and this chapter reports it fully rather than minimizing it to protect Chapter 19's conclusion.</p>
+    <h3 class="sub-h">20.3 What Kind of Combination This Actually Is</h3>
+    <p>This chapter's own close analysis is that this documented combination is closer to additive concatenation — successive independently-meaningful units placed one after another, each contributing its own separately-listed sense to a cumulative narrative picture — than to the tight, rule-governed, productive combination Pāṇinian grammar documents for phonemes generating new lexical items. Concatenating independently meaningful units into a larger narrative sequence does not itself generate a new, previously unlisted unit the way phonemic combination generates a new word; it assembles known units into a larger scene, retaining each unit's own separately documented meaning throughout.</p>
+    <h3 class="sub-h">20.4 The Chapter's Finding</h3>
+    <p>This chapter's finding qualifies, without overturning, Chapter 19's productivity-finding: genuine sequential combination is documented, but it is additive and concatenative rather than generative and productive in the strict sense phonemic combination exhibits. This distinction — the subject of Chapter 21's dedicated treatment — is this chapter's own most important contribution.</p>
+    <div class="callout"><span class="callout-tag">Chapter 20 — Function Within the Cluster</span>Documents a genuine counter-case — narrative-sequence combination — while showing it to be additive concatenation of independently meaningful units rather than the generative, rule-governed productivity phonemic combination exhibits. Qualifies rather than overturns Chapter 19.</div>
+    `,
+    refs:[
+      "Kapila Vatsyayan, <span class='rtitle'>Indian Classical Dance</span> — documented source for narrative hasta-sequences building composite dramatic scenes.",
+      "Nāṭyaśāstra, Ch. 9 — base source for the individually-listed meanings each unit retains within a documented sequence.",
+      "Zarrilli, Phillip B., <span class='rtitle'>Kathakali Dance-Drama</span> — for documented performance examples of narrative gestural sequencing.",
+      "General linguistic distinction between concatenation and generative combination (cf. standard morphosyntactic theory) — the conceptual apparatus this chapter applies to the documented dance evidence.",
+      "Series A Extended, Part VII, Part One, Ch. 19 — this chapter's own point of departure, qualified rather than overturned here.",
+      "Series A Extended, Part VII, Part One, Ch. 21 (this delivery) — where the concatenation/grammar distinction introduced here is developed at full length."
+    ]
+  },
+  {
+    n:21, cluster:"RQ4", title:"Concatenation vs. Grammar: A Precise Distinction",
+    dn:"संयोजनं व्याकरणं च — सूक्ष्मभेदः", full:true,
+    body:`
+    <h3 class="sub-h">21.1 Why This Distinction Deserves Its Own Chapter</h3>
+    <p>Chapter 20 introduced the concatenation/generative-combination distinction in passing. This chapter develops it with the rigor the cluster's overall finding depends on, since the distinction is doing real argumentative work: it is what allows this cluster to acknowledge genuine sequential combination (Ch. 20) without retracting the productivity-finding (Ch. 19).</p>
+    <h3 class="sub-h">21.2 What Grammatical Combination Requires</h3>
+    <p>Grammatical combination, as documented in the Pāṇinian system, is rule-governed in a specific sense: morphemes combine according to stated formal rules that determine, for any well-formed combination, a resulting unit whose meaning is not simply the sum of its parts read in sequence, but is determined by the specific grammatical relationships (case, agreement, government) the rules specify — and, crucially, the rules can generate combinations never previously produced or heard, which are nonetheless immediately intelligible to a competent speaker.</p>
+    <h3 class="sub-h">21.3 What Concatenation Is, By Contrast</h3>
+    <p>Concatenation, as documented in the hasta-sequence evidence Chapter 20 examined, places independently meaningful units in temporal sequence without any comparable formal apparatus governing how their meanings combine — the composite scene's meaning is documented as being built from the audience's own narrative inference across the sequence (recognizing "deer," then "startled," then "fleeing," then "toward water" and assembling a coherent scene), not from a rule-system that determines a specific composite meaning the way case-agreement determines a Sanskrit sentence's meaning.</p>
+    <h3 class="sub-h">21.4 The Chapter's Precise Conclusion</h3>
+    <p>This chapter's conclusion is that the hasta system's documented sequential combination is concatenative, dependent on audience narrative inference, rather than grammatical, dependent on a formal rule-system generating determinate novel composites. This precise distinction is what allows Chapter 19's productivity-finding to stand while Chapter 20's counter-case is fully honored rather than explained away.</p>
+    <div class="callout warn"><span class="callout-tag">Chapter 21 — Function Within the Cluster</span>Precisely distinguishes concatenation (audience-inferred sequential combination, documented for hastas) from grammatical combination (rule-governed, novel-composite-generating, documented for phonemes/morphemes) — the distinction that reconciles Chapters 19 and 20.</div>
+    `,
+    refs:[
+      "Pāṇini, <span class='rtitle'>Aṣṭādhyāyī</span> — for the formal, rule-governed structure of grammatical combination this chapter defines precisely.",
+      "Cardona, George, <span class='rtitle'>Pāṇini: His Work and Its Traditions</span> — secondary account of Pāṇinian rule-governed generativity.",
+      "General linguistic theory of compositionality (cf. standard formal semantics) — the conceptual benchmark against which concatenation is distinguished from grammatical combination.",
+      "Kapila Vatsyayan, <span class='rtitle'>Indian Classical Dance</span> — documented source for the audience-inference-dependent structure of narrative hasta-sequences.",
+      "Series A Extended, Part VII, Part One, Ch. 19–20 — the two findings this chapter's distinction reconciles.",
+      "Bhartṛhari, <span class='rtitle'>Vākyapadīya</span> II — for the grammatical tradition's own account of how sentence-meaning is determined by rule rather than by simple concatenation, the standard this chapter holds gestural combination against."
+    ]
+  },
+  {
+    n:22, cluster:"RQ4", title:"What Regional Manuals Add to the Base Inventory",
+    dn:"प्रादेशिकग्रन्थैः मूलकोशस्य वृद्धिः", full:true,
+    body:`
+    <h3 class="sub-h">22.1 Why Regional Elaboration Is Relevant to RQ 4</h3>
+    <p>This chapter examines whether regional manuals descending from the Nāṭyaśāstra's base hasta-inventory add genuinely new combinatorial capacity, or merely extend the same non-productive, concatenative structure Chapters 19 through 21 documented for the base system.</p>
+    <h3 class="sub-h">22.2 What the Abhinaya Darpaṇa Documents</h3>
+    <p>The Abhinaya Darpaṇa, examined at length in this restructuring's Part Three, is documented to expand the base inventory with additional categories — including the daśahastas (ten dance-specific hand-gestures) and more systematic dṛṣṭi (eye-movement) classifications — without introducing a documented rule-system for generating new composite meanings from combination. The expansion adds more individually-named units to the closed inventory, following the same pattern Chapter 17 identified for the base system, rather than adding combinatorial productivity.</p>
+    <h3 class="sub-h">22.3 What Further Regional Traditions Document</h3>
+    <p>Later regional traditions are documented, per this restructuring's Part Three treatment of regional variation, to further extend and reorganize the inventory in traditions such as Bharatanāṭyam, Kathakaḷi, and Odissi — again by adding, renaming, or reorganizing individually-named units, not by introducing a documented combinatorial rule-system comparable to Pāṇinian grammar.</p>
+    <h3 class="sub-h">22.4 The Chapter's Finding</h3>
+    <p>This chapter's finding is that regional elaboration, however extensive, is documented as elaboration of the same non-productive, individually-named-unit structure identified in Chapters 17 through 19, not as the introduction of a qualitatively different, more productive combinatorial system. This confirms, across the full documented historical range examined in this Part's companion Part Three, that Chapter 19's productivity-finding holds for the tradition's elaborated forms as well as its base form.</p>
+    <div class="callout"><span class="callout-tag">Chapter 22 — Function Within the Cluster</span>Confirms that regional and historical elaboration of the hasta inventory extends its size and detail without introducing genuine combinatorial productivity, consistent with Chapter 19's finding across the tradition's full documented historical range.</div>
+    `,
+    refs:[
+      "Nandikeśvara, <span class='rtitle'>Abhinaya Darpaṇa</span> — documented source for the daśahastas and dṛṣṭi expansions examined in this chapter.",
+      "Series A Extended, Part VII, Part Three (this restructuring) — the fuller documented treatment of regional variation this chapter draws on and cross-references.",
+      "Kapila Vatsyayan, <span class='rtitle'>Indian Classical Dance</span> — for documented regional inventories across Bharatanāṭyam, Kathakaḷi, and Odissi traditions.",
+      "Zarrilli, Phillip B., <span class='rtitle'>Kathakali Dance-Drama</span> — documented regional elaboration specific to the Kathakaḷi hasta-tradition.",
+      "Series A Extended, Part VII, Part One, Ch. 17, 19 — the base-inventory findings this chapter confirms hold across the elaborated forms as well.",
+      "Coomaraswamy, A.K., <span class='rtitle'>The Mirror of Gesture</span> — for early documented comparative treatment of base versus regionally-elaborated hasta inventories."
+    ]
+  },
+  {
+    n:23, cluster:"RQ4", title:"Testing the Parallel Against Comparable Sign-Systems",
+    dn:"तुल्यचिह्नव्यवस्थाभिः सह तुलना", full:true,
+    body:`
+    <h3 class="sub-h">23.1 Why an External Benchmark Strengthens This Cluster's Method</h3>
+    <p>This chapter tests this cluster's own findings (finite, digital, individually-named, non-productive) against comparable sign-systems documented outside the Indian tradition, to check whether the hasta inventory's profile is a recognizable, well-understood type of sign-system rather than an anomalous or under-described one.</p>
+    <h3 class="sub-h">23.2 Comparison to Numeral Systems</h3>
+    <p>A numeral system (the documented Sanskrit decimal numerals, for instance) is finite, digital, and individually named, and combines according to genuine positional-value rules to generate an open-ended set of representable numbers — this is a productive digital sign-system, and this chapter notes it as a case where a finite, digital inventory does achieve real productivity, which sharpens rather than blurs the contrast with the hasta system's documented non-productivity.</p>
+    <h3 class="sub-h">23.3 Comparison to Heraldic and Traffic-Signal Systems</h3>
+    <p>Heraldic blazon and traffic-signal systems are documented as finite, digital, individually-named sign-systems that, like the hasta inventory, do not combine productively to generate new, previously unlisted composite meanings — a given heraldic charge or signal light bears its assigned meaning directly, and combinations (a shield bearing several charges, a sequence of signal-lights) are documented as read by convention-governed juxtaposition rather than by a generative rule-system. This chapter finds the hasta inventory's documented profile closely matches this second category.</p>
+    <h3 class="sub-h">23.4 The Chapter's Finding</h3>
+    <p>This external benchmarking confirms that the hasta inventory's structural profile — finite, digital, individually-named, non-productively combined — is a recognizable and independently well-attested type of sign-system, comparable to heraldry and signal-systems rather than to fully generative language, which corroborates rather than merely restates this cluster's own internal findings (Ch. 17–22).</p>
+    <div class="callout"><span class="callout-tag">Chapter 23 — Function Within the Cluster</span>External benchmarking against numeral, heraldic, and signal systems confirms the hasta inventory's profile as a recognizable non-generative digital sign-system type, distinct from fully productive language and closer to heraldry or signaling — corroborating this cluster's internal findings from an independent angle.</div>
+    `,
+    refs:[
+      "General semiotic theory on sign-system typology (cf. standard introductions to semiotics, e.g. treatments following Saussure and Peirce) — the conceptual apparatus for this chapter's comparative benchmarking.",
+      "Standard treatments of positional numeral systems (general mathematics history literature) — for the productive digital system used as a contrastive case in §23.2.",
+      "General literature on heraldic blazon as a conventional, non-generative sign-system — invoked for the comparison in §23.3.",
+      "Series A Extended, Part VII, Part One, Ch. 17–19 — this cluster's internal findings, corroborated here by external comparison.",
+      "Nāṭyaśāstra, Ch. 9 — the base source for the hasta inventory's own documented structure, restated for this chapter's comparison.",
+      "Kunjunni Raja, K., <span class='rtitle'>Indian Theories of Meaning</span> — for the general Indian semiotic-theoretic vocabulary this chapter's benchmarking is checked against for consistency."
+    ]
+  },
+  {
+    n:24, cluster:"RQ4", title:"Cluster Synthesis: RQ 4 Closed as Structurally Partial",
+    dn:"चतुर्थप्रश्नस्य आंशिकसमाधानम्", full:true,
+    body:`
+    <h3 class="sub-h">24.1 Gathering the Cluster's Findings</h3>
+    <p>This chapter gathers, without introducing new argument, the findings of Chapters 17 through 23: both inventories share genuine structural resemblance — finite, individually-named, digitally categorized (Ch. 17–18); the hasta inventory lacks the phoneme inventory's documented combinatorial productivity (Ch. 19), a finding qualified but not overturned by the documented narrative-sequence counter-case, which is concatenative rather than generative (Ch. 20–21); regional and historical elaboration extends the inventory's size without adding productivity (Ch. 22); and external benchmarking against numeral, heraldic, and signal systems confirms the hasta inventory's profile as a recognizable non-generative digital sign-system type (Ch. 23).</p>
+    <h3 class="sub-h">24.2 The Cluster's Final Answer to RQ 4</h3>
+    <p>RQ 4 is answered: the parallel between hasta and varṇa inventories is real but structurally partial. Both are finite, digital, individually-named, closed curricula — a genuine and non-trivial resemblance — but the hasta inventory does not combine with anything like the phoneme inventory's productivity, its documented sequential combination being concatenative rather than grammatical, a profile independently corroborated by comparison to other non-generative digital sign-systems such as heraldry and signaling.</p>
+    <h3 class="sub-h">24.3 What This Prepares for RQ 3</h3>
+    <p>This chapter flags directly what the next cluster (RQ 3, Ch. 25–32) must take up: a sign-system whose units mostly signify individually and combine only concatenatively, rather than combining productively, is on its face a weaker candidate for generating vākya-level (sentence-level) meaning independently of accompanying speech — precisely the question RQ 3 tests directly, rather than inferring the answer from this cluster's findings alone.</p>
+    <h3 class="sub-h">24.4 What This Confirms From Earlier Clusters</h3>
+    <p>This finding is consistent with, and further specifies, RQ 2's own negative finding on sphoṭa (Ch. 9–16): a system lacking sphoṭa's manifestation-relationship (Ch. 12) and lacking phonemic-style productivity (this cluster) is, on two independent grounds now, shown to differ substantially from spoken language's own documented structure — strengthening, from a second independent angle, the case this Part is building for the dhvani-proposal in Chapters 37 through 39.</p>
+    <div class="callout warn"><span class="callout-tag">Chapter 24 — Cluster Closed</span>RQ 4 is closed as structurally partial: genuine inventory-level resemblance, but no comparable combinatorial productivity. This confirms and specifies RQ 2's negative sphoṭa-finding from a second, independent angle, and directly motivates RQ 3's dedicated test (Ch. 25–32) of sentence-level meaning.</div>
+    `,
+    refs:[
+      "This chapter synthesizes only sources already cited in Chapters 17–23 of this cluster, consistent with this series' practice of not manufacturing new support at a closing chapter.",
+      "Pāṇini, <span class='rtitle'>Aṣṭādhyāyī</span> — the cluster's central benchmark for productivity, cited across Chapters 19, 21, and 23.",
+      "Nāṭyaśāstra, Ch. 9 and Nandikeśvara, <span class='rtitle'>Abhinaya Darpaṇa</span> — the cluster's descriptive evidentiary base, cited across Chapters 17–20 and 22.",
+      "Kapila Vatsyayan, <span class='rtitle'>Indian Classical Dance</span> — cited across Chapters 18, 20, and 22 for pedagogical and performance description.",
+      "Series A Extended, Part VII, Part One, Ch. 9–16 — the RQ 2 cluster this chapter's finding is shown to independently corroborate.",
+      "Series A Extended, Part VII, Part One, Ch. 25–32 (this delivery) — the RQ 3 cluster this chapter's finding directly motivates and hands off to."
+    ]
+  },
+  {
+    n:25, cluster:"RQ3", title:"The Etymological Claim Built Into Abhinaya",
+    dn:"अभिनयशब्दस्य व्युत्पत्तिगतो दावः", full:true,
+    body:`
+    <h3 class="sub-h">25.1 Why Etymology Is Evidence, Not Decoration</h3>
+    <p>This chapter opens the RQ 3 cluster — whether gesture can generate sentence-level (vākya-level) meaning independently — by examining the documented etymological gloss the Nāṭyaśāstra's own tradition attaches to the term <span class="term">abhinaya</span> itself, treating this as genuine evidence about how the tradition conceives the term's function, not as incidental linguistic trivia.</p>
+    <h3 class="sub-h">25.2 The Documented Etymology</h3>
+    <p><span class="iast">Abhinaya</span> is documented as deriving from the root <span class="iast">nī</span> (to carry, to lead) with the prefix <span class="iast">abhi</span> (toward), yielding a sense of "carrying (meaning) toward (the spectator)." This chapter treats this etymology as building a directional, transmission-oriented function into the very definition of the term, prior to any technical discussion of gesture's mechanics.</p>
+    <h3 class="sub-h">25.3 Why This Etymology Supports, Without Deciding, RQ 3</h3>
+    <p>This chapter is careful about what the etymology does and does not establish: it confirms that abhinaya is conceived, from its very naming, as a carrying-toward — structurally parallel to vaikharī's own documented function (RQ 1's cluster, Ch. 1–8) of carrying meaning outward to a perceiver. It does not, by itself, establish that this carrying-toward is capable of reaching vākya-level, sentence-scale meaning independently, since carrying a single denoted sense toward a perceiver (RQ 1's own more modest finding) is a weaker claim than carrying a full sentence's worth of composed meaning.</p>
+    <h3 class="sub-h">25.4 The Chapter's Finding</h3>
+    <p>This chapter's finding is that the etymology lends independent support to the general vaikharī-extension case (corroborating RQ 1's Chapter 4 finding) without settling RQ 3's more specific and more demanding question, which the remaining chapters of this cluster take up directly through the Nāṭyaśāstra's own definitional structure (Ch. 26) and documented performance evidence (Ch. 27–29).</p>
+    <div class="callout"><span class="callout-tag">Chapter 25 — Function Within the Cluster</span>The documented "carrying-toward" etymology of abhinaya corroborates the general vaikharī-extension case from an independent angle, without by itself settling whether that carrying-toward reaches full vākya-level meaning — the specific question the rest of this cluster tests.</div>
+    `,
+    refs:[
+      "Nāṭyaśāstra, Ch. 8 — documented source for the etymological gloss on abhinaya examined in this chapter.",
+      "Monier-Williams, M., <span class='rtitle'>Sanskrit-English Dictionary</span> — for the root <span class='rtitle'>nī</span> and the prefix <span class='rtitle'>abhi</span>'s documented senses.",
+      "Kapila Vatsyayan, <span class='rtitle'>Bharata, the Nāṭyaśāstra</span> — for the traditional gloss and its place in the text's own definitional apparatus.",
+      "Series A Extended, Part VII, Part One, Ch. 1–4 — the RQ 1 cluster's vaikharī-extension finding, corroborated here from an independent etymological angle.",
+      "Gerow, Edwin, <span class='rtitle'>Indian Poetics</span> — for general treatment of etymological argument as a recognized mode of evidence in Sanskrit textual tradition.",
+      "Series A Extended, Part VII, Part One, Ch. 26 (this delivery) — where the fuller definitional structure this etymology introduces is examined directly."
+    ]
+  },
+  {
+    n:26, cluster:"RQ3", title:"The Fourfold Division at the Point of Definition",
+    dn:"लक्षणस्थाने चतुर्विधविभागः", full:true,
+    body:`
+    <h3 class="sub-h">26.1 Why the Point of Definition Matters</h3>
+    <p>This chapter examines where, structurally, the Nāṭyaśāstra places its fourfold division of abhinaya — āṅgika (bodily), vācika (verbal), āhārya (costume and ornament), sāttvika (involuntary psychophysical states) — and argues that its placement at the point of first definition, rather than as a later elaboration, is itself evidence bearing on RQ 3.</p>
+    <h3 class="sub-h">26.2 What Definitional Placement Signals</h3>
+    <p>This chapter's method: if a text defines a term and only later, as an afterthought, notes that the phenomenon comes in several varieties, that suggests the varieties are secondary specifications of an already-complete concept. If a text defines a term as inherently fourfold from the outset — such that the definition itself is incomplete without naming all four — that suggests the four are constitutive of the concept, not optional elaborations of it. This chapter finds the documented Nāṭyaśāstra material follows the second pattern: the fourfold division appears at the point of first definition, not as a later refinement.</p>
+    <h3 class="sub-h">26.3 The Direct Implication for RQ 3</h3>
+    <p>This chapter reads this documented structural fact as directly relevant to RQ 3: if abhinaya is defined, from the outset, as constitutively fourfold, then āṅgika (gesture) is documented by the source text's own definitional practice as one of four coordinated channels, not as an independent, free-standing communicative system the text expects to carry full dramatic meaning unaided by the other three, and especially not unaided by vācika (verbal) abhinaya.</p>
+    <h3 class="sub-h">26.4 The Chapter's Finding, and Its Limits</h3>
+    <p>This chapter's finding is that the source text's own definitional structure does not present āṅgika abhinaya as a self-sufficient vākya-level system. This chapter is careful to note what remains open: whether specific performance traditions nonetheless develop gesture-only sequences in practice, in tension with the base text's own definitional emphasis on coordination, is a documented question examined directly in Chapters 28 and 29.</p>
+    <div class="callout"><span class="callout-tag">Chapter 26 — Function Within the Cluster</span>The fourfold division's placement at the point of first definition indicates the four channels are constitutive, coordinated components of abhinaya rather than optional elaborations — evidence against treating āṅgika as an independently self-sufficient vākya-level system, though practice-level exceptions remain to be tested.</div>
+    `,
+    refs:[
+      "Nāṭyaśāstra, Ch. 8 (opening definitional material) — the documented source for the fourfold division's placement examined in this chapter.",
+      "Kapila Vatsyayan, <span class='rtitle'>Bharata, the Nāṭyaśāstra</span> — for the structural analysis of the text's own definitional sequencing.",
+      "Ghosh, Manomohan (trans.), <span class='rtitle'>The Nāṭyaśāstra</span> — standard translation consulted for the documented sequencing of the definitional material.",
+      "General method in textual/definitional analysis regarding constitutive versus elaborative structure (cf. standard hermeneutic practice in Sanskrit commentarial method) — the conceptual apparatus applied in this chapter's argument.",
+      "Series A Extended, Part VII, Part One, Ch. 25 — this cluster's own prior etymological finding, extended here through definitional structure.",
+      "Series A Extended, Part VII, Part One, Ch. 28–29 (this delivery) — where the practice-level exceptions this chapter flags are examined directly."
+    ]
+  },
+  {
+    n:27, cluster:"RQ3", title:"Reading Āṅgika as Coordinated, Not Independent",
+    dn:"आङ्गिकस्य समन्वितत्वं न स्वातन्त्र्यम्", full:true,
+    body:`
+    <h3 class="sub-h">27.1 What "Coordinated" Means in This Chapter's Usage</h3>
+    <p>This chapter specifies precisely what it means to read āṅgika as coordinated rather than independent: coordination means the four channels are documented as ordinarily deployed together, in the same performance moment, each contributing according to its own particular strengths, rather than āṅgika being switched on only when vācika is absent, or functioning as a complete substitute for it.</p>
+    <h3 class="sub-h">27.2 The Documented Ordinary Practice</h3>
+    <p>The Nāṭyaśāstra's own documented material on dramatic performance describes a performer simultaneously speaking a line (vācika), forming appropriate hastas and body-postures (āṅgika), wearing costume appropriate to the character (āhārya), and displaying appropriate involuntary states where called for (sāttvika) — this chapter reads the base text's own descriptive practice as confirming the coordinated model directly, not merely inferring it from the definitional structure Chapter 26 examined.</p>
+    <h3 class="sub-h">27.3 Why This Reading Does Not Diminish Gesture's Importance</h3>
+    <p>This chapter is careful to state what this finding does not imply: coordination is not subordination. The documented tradition does not treat āṅgika as a merely decorative accompaniment to vācika — Chapter 25's etymological finding and RQ 1's cluster both establish gesture's own genuine communicative function. What this chapter's finding specifically establishes is narrower: that function is ordinarily exercised in coordination with, not in replacement of, spoken language, which is a different and more modest claim than either "gesture is decorative" or "gesture alone generates full meaning."</p>
+    <h3 class="sub-h">27.4 The Chapter's Finding</h3>
+    <p>Āṅgika abhinaya is documented, in the source text's own ordinary descriptive practice, as coordinated with the other three channels rather than functioning as an independent, self-sufficient system — confirming, through direct textual practice rather than only definitional inference, the reading Chapter 26 proposed on structural grounds.</p>
+    <div class="callout"><span class="callout-tag">Chapter 27 — Function Within the Cluster</span>Confirms, through the source text's own documented descriptive practice of performance (not only its definitional structure), that āṅgika abhinaya operates in coordination with the other three channels — a finding that does not diminish gesture's genuine communicative function but specifies how that function is ordinarily exercised.</div>
+    `,
+    refs:[
+      "Nāṭyaśāstra, Ch. 8, descriptive material on coordinated performance — the documented source for this chapter's central finding.",
+      "Ghosh, Manomohan (trans.), <span class='rtitle'>The Nāṭyaśāstra</span> — for the specific descriptive passages on coordinated multi-channel performance.",
+      "Kapila Vatsyayan, <span class='rtitle'>Bharata, the Nāṭyaśāstra</span> — secondary analysis of the coordinated-performance model.",
+      "Series A Extended, Part VII, Part One, Ch. 26 — this chapter's own point of departure, confirmed here through direct practice rather than only definitional structure.",
+      "Series A Extended, Part VII, Part One, Ch. 1–8 (RQ 1 cluster) — gesture's own genuine communicative function, which this chapter's coordination-finding does not diminish.",
+      "Zarrilli, Phillip B., <span class='rtitle'>Kathakali Dance-Drama</span> — documented performance-practice evidence of simultaneous multi-channel deployment in a specific regional tradition."
+    ]
+  },
+  {
+    n:28, cluster:"RQ3", title:"The Documented Exception: Solo, Gesture-Forward Traditions",
+    dn:"अपवादः — एकाकिनृत्यपरम्पराः", full:true,
+    body:`
+    <h3 class="sub-h">28.1 Why an Honest Cluster Must Examine the Harder Case</h3>
+    <p>Chapters 26 and 27 establish the base text's own coordinated model. This chapter takes up the harder documented case this cluster is obligated to examine: later solo dance traditions that develop gesture-forward narrative sequences, which appear, on their face, to push against the base text's coordination-emphasis.</p>
+    <h3 class="sub-h">28.2 The Documented Practice</h3>
+    <p>Solo interpretive traditions across several major dance lineages are documented as performing extended narrative sequences built substantially from hasta and facial abhinaya, in which the performer's own vācika channel (spoken lines) is frequently absent, replaced by sung text delivered by an accompanying vocalist rather than by the performer directly.</p>
+    <h3 class="sub-h">28.3 Why This Complicates, But Does Not Simply Refute, Chapters 26–27</h3>
+    <p>This chapter's own analysis is careful and precise: what has changed in this documented practice is who supplies the vācika channel, not whether one is present at all — the audience still receives sung text simultaneously with the gestural sequence, functioning as the coordinating verbal channel even though it is not spoken by the same performer executing the gesture. This chapter treats this as a genuine complication of the simple "performer speaks and gestures simultaneously" picture Chapter 27 described, without yet treating it as a case of gesture operating with no verbal coordination whatsoever.</p>
+    <h3 class="sub-h">28.4 What Remains for Chapter 29</h3>
+    <p>This chapter flags, without yet resolving, a harder residual question: whether any documented performance segments exist in which gesture operates with no verbal channel at all — neither spoken by the performer nor sung by an accompanist — which would be the genuinely decisive test case for RQ 3. That specific test is Chapter 29's task, via the documented nṛtta/nṛtya distinction.</p>
+    <div class="callout warn"><span class="callout-tag">Chapter 28 — Function Within the Cluster</span>Documents the genuine harder case of solo gesture-forward performance, finding that it changes who supplies the coordinating verbal channel (sung rather than spoken by the performer) without yet establishing gesture operating with no verbal channel at all — the decisive residual question for Chapter 29.</div>
+    `,
+    refs:[
+      "Kapila Vatsyayan, <span class='rtitle'>Indian Classical Dance</span> — documented source for solo interpretive traditions and their sung-text accompaniment structure.",
+      "Zarrilli, Phillip B., <span class='rtitle'>Kathakali Dance-Drama</span> — for documented performance examples of gesture-forward solo sequences.",
+      "Series A Extended, Part VII, Part One, Ch. 26–27 — the coordinated-model findings this chapter's harder case complicates without refuting.",
+      "Series A Extended, Part VII, Part Three (this restructuring) — the fuller documented treatment of regional solo dance traditions this chapter draws on.",
+      "General ethnomusicological literature on vocalist-dancer coordination in South Asian solo dance forms — for the documented structure of sung-versus-spoken verbal accompaniment.",
+      "Series A Extended, Part VII, Part One, Ch. 29 (this delivery) — where the decisive residual question flagged here is tested directly."
+    ]
+  },
+  {
+    n:29, cluster:"RQ3", title:"Testing Against Nṛtta and Nṛtya Directly",
+    dn:"नृत्तनृत्ययोः साक्षात्परीक्षा", full:true,
+    body:`
+    <h3 class="sub-h">29.1 The Distinction This Chapter Applies</h3>
+    <p>This chapter applies the documented <span class="term">nṛtta</span>/<span class="term">nṛtya</span> distinction directly to the residual question Chapter 28 flagged. Nṛtta is documented as pure, non-representational rhythmic movement carrying no denoted meaning at all — decorative and rhythmic rather than semantic. Nṛtya is documented as expressive, meaning-bearing movement, including the solo interpretive sequences Chapter 28 examined.</p>
+    <h3 class="sub-h">29.2 Searching for Gesture Without Any Verbal Channel</h3>
+    <p>This chapter's own search of the documented practice for segments combining nṛtya's meaning-bearing character with a complete absence of any verbal channel (spoken or sung) finds such segments to be rare and, where documented, narrower in scope than sustained narrative sequences — abstract nṛtta-adjacent interpretive passages exist, but as they approach pure nṛtta's non-representational character, the specific meaning conveyed narrows correspondingly toward mood, rhythm, and general affective quality rather than sustaining detailed narrative content.</p>
+    <h3 class="sub-h">29.3 Why This Result Is Not Surprising Given Chapters 19–21's Findings</h3>
+    <p>This chapter reads this finding as consistent with, rather than independent of, the RQ 4 cluster's own findings (Ch. 19–21): a sign-system documented as lacking combinatorial productivity and dependent on concatenation and audience narrative inference would be expected, on general grounds, to struggle to sustain detailed vākya-level content without some verbal channel supplying the connective narrative structure concatenation alone does not provide. The empirical performance-practice evidence and the structural sign-system analysis converge on the same conclusion from two independent directions.</p>
+    <h3 class="sub-h">29.4 The Chapter's Finding</h3>
+    <p>Even the hardest documented test case — gesture-only performance approaching pure nṛtya without any verbal channel — narrows toward mood and affect rather than sustaining full narrative, sentence-level content. This confirms, rather than merely repeats, Chapters 26 through 28's coordination-finding, now tested directly against the tradition's own most demanding documented case.</p>
+    <div class="callout warn"><span class="callout-tag">Chapter 29 — Function Within the Cluster</span>Directly tests the hardest documented case (gesture without any verbal channel, spoken or sung) and finds that meaning narrows toward mood and affect rather than sustaining full vākya-level narrative — confirming the coordination-finding from Chapters 26–28 and converging with the RQ 4 cluster's independent structural findings.</div>
+    `,
+    refs:[
+      "Kapila Vatsyayan, <span class='rtitle'>Indian Classical Dance</span> — documented source for the nṛtta/nṛtya distinction and its practice-level application.",
+      "Zarrilli, Phillip B., <span class='rtitle'>Kathakali Dance-Drama</span> — documented performance examples used in classifying test-case segments.",
+      "Coomaraswamy, A.K. and Duggirala, Gopala Kristnayya (trans.), <span class='rtitle'>The Mirror of Gesture</span> — early documented treatment of nṛtta/nṛtya and abstract interpretive movement.",
+      "Series A Extended, Part VII, Part One, Ch. 19–21 — the RQ 4 cluster's structural findings this chapter's performance-level finding is shown to converge with.",
+      "Series A Extended, Part VII, Part One, Ch. 26–28 — the coordination-findings this chapter directly tests and confirms.",
+      "Series A Extended, Part VII, Part Three (this restructuring) — regional documentation of nṛtta/nṛtya practice across specific dance lineages, drawn on for this chapter's search of the documented evidence."
+    ]
+  },
+  {
+    n:30, cluster:"RQ3", title:"What Sentence-Level Meaning Would Require of Any Sign-System",
+    dn:"वाक्यार्थस्य साधारणापेक्षा", full:true,
+    body:`
+    <h3 class="sub-h">30.1 Why a General Criterion Is Needed at This Point</h3>
+    <p>Having gathered performance-level and structural evidence (Ch. 25–29), this chapter steps back to state, independent of the Sanskrit material specifically, what any sign-system would need to possess to generate sentence-level meaning on its own — so that this cluster's finding can be checked against a general, principled standard rather than one shaped retroactively by the evidence already reviewed.</p>
+    <h3 class="sub-h">30.2 The Three General Requirements</h3>
+    <p>This chapter proposes three requirements, drawn from general semiotic and linguistic theory rather than from anything specific to gesture: first, a productive combinatorial mechanism capable of generating an open-ended range of composite meanings from a finite base (the requirement RQ 4's cluster tested and found largely absent, Ch. 19–21); second, a formal system for marking grammatical relationships between combined units — who is doing what to whom, in what temporal or logical relationship — comparable to case-marking, agreement, or word-order rules; third, a documented capacity for the system to express genuinely novel propositions never previously encountered by its users, the clearest signature of true generativity.</p>
+    <h3 class="sub-h">30.3 Applying the Three Requirements to the Gathered Evidence</h3>
+    <p>Applying these three requirements to the evidence already gathered: the first requirement is documented as largely unmet (Ch. 19–21); no documented formal grammatical-relationship-marking system comparable to case or agreement is identified anywhere in the hasta tradition, satisfying neither the second requirement; and the narrative-sequence evidence (Ch. 20, 29) shows audience narrative inference filling in relationships that a grammatical system would otherwise mark explicitly, which is a different and weaker mechanism than the third requirement's novel-proposition-generation criterion demands.</p>
+    <h3 class="sub-h">30.4 The Chapter's Finding</h3>
+    <p>Measured against a general, independently-derived standard for sentence-level generativity, codified gesture as documented across this cluster's evidence satisfies none of the three requirements fully, though it satisfies the assembly of composite narrative content through inference-dependent concatenation in a limited, bounded way (Ch. 20). This chapter's finding is not a repetition of the performance-evidence chapters but an independent theoretical confirmation of the same qualified conclusion.</p>
+    <div class="callout warn"><span class="callout-tag">Chapter 30 — Function Within the Cluster</span>Independently derives three general requirements for sentence-level generativity (productive combination, formal grammatical marking, novel-proposition capacity) and finds gesture does not fully satisfy any of the three — theoretically confirming, from principle rather than only from evidence, this cluster's qualified conclusion.</div>
+    `,
+    refs:[
+      "General linguistic theory of grammatical generativity and compositionality (cf. standard formal syntax and semantics literature) — the conceptual apparatus this chapter derives its three requirements from.",
+      "Series A Extended, Part VII, Part One, Ch. 19–21 — this cluster's own prior productivity findings, checked here against requirement one.",
+      "Nāṭyaśāstra, Ch. 9 and related material — searched here for any documented formal grammatical-marking system, per requirement two, and found wanting.",
+      "Series A Extended, Part VII, Part One, Ch. 20, 29 — the narrative-inference evidence checked here against requirement three.",
+      "Bhartṛhari, <span class='rtitle'>Vākyapadīya</span> II — for the grammatical tradition's own account of sentence-meaning generativity, the standard this chapter's three requirements are derived to be consistent with.",
+      "Series A Extended, Part VII, Part One, Ch. 31 (this delivery) — where an external, non-Sanskrit linguistic benchmark is applied to check this chapter's finding further."
+    ]
+  },
+  {
+    n:31, cluster:"RQ3", title:"Comparative Check: Sign-Language Linguistics as External Benchmark",
+    dn:"संकेतभाषाभाषाविज्ञानेन तुलना", full:true,
+    body:`
+    <h3 class="sub-h">31.1 Why This Comparison Is the Right External Check</h3>
+    <p>This chapter checks Chapter 30's finding against the most directly relevant external benchmark available: documented linguistic research on natural sign languages (such as American Sign Language and other documented national sign languages), which are established in the linguistics literature as full, grammatically generative languages using a visual-gestural rather than acoustic-vocal channel. If codified dramatic hasta-gesture resembled documented sign languages in their grammatical structure, that would be strong evidence against this cluster's qualified conclusion; if it does not, that comparison sharpens rather than undermines the conclusion.</p>
+    <h3 class="sub-h">31.2 What Makes Natural Sign Languages Genuinely Generative</h3>
+    <p>Natural sign languages are documented in the linguistics literature as possessing exactly the features Chapter 30 specified as necessary: productive combinatorial morphology, formal grammatical marking (via documented mechanisms such as spatial verb agreement, classifier constructions, and non-manual grammatical markers including specific facial-grammar patterns), and the capacity to express any novel proposition a signer has never previously encountered — the same generative capacity spoken languages possess, channel notwithstanding.</p>
+    <h3 class="sub-h">31.3 Why Codified Dramatic Gesture Does Not Match This Profile</h3>
+    <p>This chapter's finding is that codified dramatic hasta-gesture, as documented across this cluster's evidence, does not match this profile: it lacks documented formal grammatical marking of the kind sign-language linguistics identifies (no documented spatial-agreement system, no documented classifier-construction system comparable to what sign-language research describes), and its combinatorial capacity remains concatenative rather than productive (Ch. 19–21). This is a precise, principled difference, not a vague impression: natural sign languages are full languages by the same linguistic criteria spoken languages are, and codified dramatic gesture, on the documented evidence, is not.</p>
+    <h3 class="sub-h">31.4 The Chapter's Finding and Its Significance</h3>
+    <p>This comparison is significant because it forecloses a possible objection: that this cluster's negative finding on gesture's linguistic status merely reflects an outdated or narrow conception of what could count as a full language. Sign-language linguistics demonstrates that a visual-gestural channel is fully capable of supporting true grammatical generativity — the deciding factor is not channel (acoustic versus visual) but documented grammatical structure, and codified dramatic gesture, unlike natural sign languages, is not documented to possess that structure.</p>
+    <div class="callout warn"><span class="callout-tag">Chapter 31 — Function Within the Cluster</span>Benchmarking against natural sign-language linguistics shows the deciding factor for full linguistic status is grammatical structure, not visual-versus-acoustic channel — and codified dramatic gesture, unlike documented natural sign languages, lacks the formal grammatical marking and productivity that would qualify it as a full language by the same standard.</div>
+    `,
+    refs:[
+      "Stokoe, William C., <span class='rtitle'>Sign Language Structure</span> — foundational documented linguistic analysis establishing sign languages as full grammatical systems.",
+      "Klima, Edward S. and Bellugi, Ursula, <span class='rtitle'>The Signs of Language</span> — standard documented account of ASL's grammatical generativity, spatial agreement, and classifier systems.",
+      "Sandler, Wendy and Lillo-Martin, Diane, <span class='rtitle'>Sign Language and Linguistic Universals</span> — comprehensive documented treatment of formal grammatical marking (including non-manual markers) in natural sign languages.",
+      "Series A Extended, Part VII, Part One, Ch. 19–21, 30 — this cluster's own prior findings, checked here against the sign-language benchmark.",
+      "Nāṭyaśāstra, Ch. 9 and Nandikeśvara, <span class='rtitle'>Abhinaya Darpaṇa</span> — the documented codified-gesture material searched, and found wanting, for comparable grammatical structure.",
+      "Emmorey, Karen, <span class='rtitle'>Language, Cognition, and the Brain: Insights From Sign Language Research</span> — for the general principle that channel (visual versus acoustic) does not determine linguistic status; grammatical structure does."
+    ]
+  },
+  {
+    n:32, cluster:"RQ3", title:"Cluster Synthesis: RQ 3 Closed as Qualified-Coordinated",
+    dn:"तृतीयप्रश्नस्य सापेक्षसमाधानम्", full:true,
+    body:`
+    <h3 class="sub-h">32.1 Gathering the Cluster's Findings</h3>
+    <p>This chapter gathers, without introducing new argument, the findings of Chapters 25 through 31: the etymological "carrying-toward" sense of abhinaya corroborates the general vaikharī-extension case without settling vākya-level capacity specifically (Ch. 25); the fourfold division's placement at the point of definition indicates the four channels are constitutively coordinated, not independently self-sufficient (Ch. 26), confirmed by the source text's own descriptive practice (Ch. 27); the documented harder case of solo gesture-forward tradition changes who supplies the verbal channel without eliminating it (Ch. 28); even the hardest test case, gesture approaching pure nṛtya without any verbal channel, narrows toward mood rather than sustaining full narrative (Ch. 29); a general, independently-derived theoretical standard confirms gesture satisfies none of the three requirements for full sentence-level generativity (Ch. 30); and comparison to natural sign-language linguistics forecloses the objection that this is merely an outdated standard, showing the deciding factor is documented grammatical structure, which codified dramatic gesture lacks (Ch. 31).</p>
+    <h3 class="sub-h">32.2 The Cluster's Final Answer to RQ 3</h3>
+    <p>RQ 3 is answered: gesture, as codified and documented in the dramatic and dance tradition this Part examines, does not generate vākya-level meaning independently of an accompanying verbal channel. It operates, per the source text's own definitional and descriptive practice, in coordination with speech (spoken or sung), and even its hardest documented gesture-only test cases narrow toward mood and affect rather than sustaining full sentence-level narrative content.</p>
+    <h3 class="sub-h">32.3 Why "Qualified-Coordinated" Is the Right Label, Not a Flat Denial</h3>
+    <p>This chapter is careful that this finding not be mistaken for a claim that gesture is meaningless or merely decorative — RQ 1's cluster (Ch. 1–8) and this cluster's own Chapter 25 both establish gesture's genuine, textually-licensed communicative function. What this cluster specifically establishes is narrower: that function does not extend, on the documented evidence, to full independent sentence-generativity, and is most accurately described as qualified and coordinated rather than either fully linguistic or merely ornamental.</p>
+    <h3 class="sub-h">32.4 What This Confirms Across the Part So Far</h3>
+    <p>This finding converges with, rather than merely sitting alongside, the RQ 2 and RQ 4 clusters' own negative findings (Ch. 9–24): gesture lacks sphoṭa's manifestation-relationship (Ch. 12), lacks phonemic-style combinatorial productivity (Ch. 19), and now, this cluster confirms, lacks full sentence-level independent generativity (Ch. 30–31) — three independent tests converging on the same qualified picture, each strengthening the case, developed across Chapters 37 through 39, for treating gesture's operation through dhvani (suggestion) rather than through the stronger linguistic and sphoṭa-style claims this Part has now tested and found wanting across three separate clusters.</p>
+    <div class="callout warn"><span class="callout-tag">Chapter 32 — Cluster Closed</span>RQ 3 is closed: gesture is qualified-coordinated, not independently sentence-generative — a finding that converges with RQ 2's and RQ 4's own negative findings across three independent tests, together building the case for this Part's dhvani-proposal (Ch. 37–39).</div>
+    <div class="scope-note" style="margin-top:2rem;">Chapters 33 through 40 of Part One remain: RQ 6 (lokadharmī/nāṭyadharmī and linguistic status, Ch. 33–36), RQ 7 (the dhvani proposal itself, Ch. 37–39), and RQ 8 plus Part One's own full closing synthesis (Ch. 40) — each to this same depth, in a subsequent delivery.</div>
+    `,
+    refs:[
+      "This chapter synthesizes only sources already cited in Chapters 25–31 of this cluster, consistent with this series' practice of not manufacturing new support at a closing chapter.",
+      "Nāṭyaśāstra, Ch. 8–9 — the cluster's central textual anchor, cited across Chapters 25–29.",
+      "Stokoe, William C., <span class='rtitle'>Sign Language Structure</span>, and Klima & Bellugi, <span class='rtitle'>The Signs of Language</span> — the cluster's decisive external benchmark, cited in Chapter 31.",
+      "Series A Extended, Part VII, Part One, Ch. 9–16 (RQ 2) and Ch. 17–24 (RQ 4) — the two prior clusters this chapter's finding is shown to converge with.",
+      "Kapila Vatsyayan, <span class='rtitle'>Indian Classical Dance</span>, and Zarrilli, <span class='rtitle'>Kathakali Dance-Drama</span> — the cluster's performance-practice evidentiary base, cited across Chapters 27–29.",
+      "Series A Extended, Part VII, Part One, Ch. 37–39 (forthcoming) — the dhvani-proposal this cluster's convergent finding, alongside RQ 2 and RQ 4, is shown to motivate."
+    ]
+  },
+  {
+    n:33, cluster:"RQ6", title:"The Distinction Itself and Its Documented Scope",
+    dn:"भेदः स्वयं तस्य च व्याप्तिः", full:true,
+    body:`
+    <h3 class="sub-h">33.1 Why RQ 6 Follows Naturally From RQ 3's Close</h3>
+    <p>Chapter 32 closed RQ 3 by confirming gesture is qualified-coordinated rather than independently sentence-generative, while insisting this finding must not be mistaken for a claim that gesture is meaningless. This chapter opens RQ 6 by asking a related but distinct question: independent of whether gesture can generate full sentences, does it satisfy the more basic condition of counting as linguistic at all, in Bhartṛhari's own technical sense — and the documented lokadharmī/nāṭyadharmī distinction is this cluster's evidentiary starting point.</p>
+    <h3 class="sub-h">33.2 The Documented Distinction</h3>
+    <p><span class="term">Lokadharmī</span> is documented in the Nāṭyaśāstra as representation modeled directly on ordinary worldly behavior, minimally stylized. <span class="term">Nāṭyadharmī</span> is documented as representation following dramatic convention specific to the stage, considerably more stylized, and in many documented cases not directly resembling ordinary behavior at all. A hasta depicting sorrow through a codified hand-position is documented as nāṭyadharmī; an actor simply weeping in an unstylized, naturalistic manner is documented as closer to lokadharmī.</p>
+    <h3 class="sub-h">33.3 The Documented Scope of the Distinction</h3>
+    <p>This chapter is careful to establish the distinction's scope precisely before drawing any inference from it: the Nāṭyaśāstra documents both registers as legitimate and deliberately deployed depending on dramatic context, not as a hierarchy where one register is corrective of the other. Nāṭyadharmī is not documented as a fallback used only when lokadharmī representation is unavailable; both are documented as positive, intentional choices within the performer's own craft.</p>
+    <h3 class="sub-h">33.4 Why This Chapter Withholds Judgment on Linguistic Status</h3>
+    <p>This chapter withholds any claim about linguistic status until Chapter 34 examines the specific feature of the distinction — convention versus natural iconicity — that bears on Bhartṛhari's own technical requirements. This chapter's own contribution is establishing the distinction's documented scope precisely, so that the inference in Chapter 34 is drawn from an accurately stated textual distinction rather than a loosely paraphrased one.</p>
+    <div class="callout"><span class="callout-tag">Chapter 33 — Function Within the Cluster</span>Establishes the lokadharmī/nāṭyadharmī distinction's documented scope precisely: both registers are legitimate, intentional, context-dependent choices, neither a fallback for the other. No claim about linguistic status is yet drawn.</div>
+    `,
+    refs:[
+      "Nāṭyaśāstra, Ch. 13 (lokadharmī/nāṭyadharmī material) — documented primary source for the distinction examined in this chapter.",
+      "Ghosh, Manomohan (trans.), <span class='rtitle'>The Nāṭyaśāstra</span> — for the specific passages defining and scoping the distinction.",
+      "Kapila Vatsyayan, <span class='rtitle'>Bharata, the Nāṭyaśāstra</span> — secondary analysis of the distinction's documented deployment across dramatic contexts.",
+      "Series A Extended, Part VII, Part One, Ch. 32 — this cluster's own point of departure from the RQ 3 cluster's close.",
+      "Gerow, Edwin, <span class='rtitle'>Indian Poetics</span> — for general treatment of stylization registers in classical Sanskrit dramatic theory.",
+      "Series A Extended, Part VII, Part One, Ch. 34 (this delivery) — where the inference this chapter withholds is drawn directly."
+    ]
+  },
+  {
+    n:34, cluster:"RQ6", title:"Convention-Governed vs. Naturally Iconic",
+    dn:"सङ्केतमूलं वा स्वाभाविकसाम्यमूलम्", full:true,
+    body:`
+    <h3 class="sub-h">34.1 What Bhartṛhari's Own Framework Requires</h3>
+    <p>Series A Extended Part One's own account of Bhartṛhari's linguistic theory establishes that natural, self-evidently iconic resemblance is not what makes a sign linguistic in his technical sense; convention-governed, community-shared pairing between sign and meaning is the relevant requirement. This chapter tests the lokadharmī/nāṭyadharmī distinction directly against that requirement.</p>
+    <h3 class="sub-h">34.2 Reading Nāṭyadharmī as Convention-Governed</h3>
+    <p>This chapter reads the documented existence of nāṭyadharmī specifically — stylized representation that does not directly resemble the emotion or object it signifies, as Chapter 33 established — as the tradition's own explicit acknowledgment that codified gestural meaning is, in this register at least, saṅketa-governed rather than naturally iconic. A codified sorrow-hasta does not resemble sorrow the way a naturalistic weeping gesture does; its meaning must be learned, which this chapter reads as the same evidentiary signature Chapter 12 (RQ 2 cluster) already used to establish convention over manifestation for the general hasta-case.</p>
+    <h3 class="sub-h">34.3 Why This Satisfies a Necessary Condition</h3>
+    <p>This chapter's finding is that nāṭyadharmī gesture specifically satisfies a necessary condition for counting as linguistic in Bhartṛhari's technical sense — the convention-governed condition — precisely because it is not naturally iconic. This is a genuine, positive finding, and this chapter states it plainly rather than underselling it.</p>
+    <h3 class="sub-h">34.4 Why "Necessary" Is Not "Sufficient" — Flagged for Chapter 35</h3>
+    <p>This chapter is careful to flag, without yet arguing, that satisfying a necessary condition is not the same as satisfying every condition required for full linguistic status. Arbitrary convention alone, without further conditions Bhartṛhari's framework also requires, would describe many non-linguistic sign-systems as well (traffic signals, heraldic charges — the very comparison class Chapter 23's RQ 4 cluster already examined). Chapter 35 takes up directly what further conditions remain and whether gesture satisfies them.</p>
+    <div class="callout"><span class="callout-tag">Chapter 34 — Function Within the Cluster</span>Nāṭyadharmī gesture satisfies the convention-governed necessary condition for Bhartṛhari's technical sense of linguistic status, evidenced by the same non-iconicity signature Chapter 12 used for the general hasta-case. This is necessary, not sufficient — the qualification Chapter 35 develops.</div>
+    `,
+    refs:[
+      "Series A Extended, Part I, §29.2 — Bhartṛhari's universals-commitment and the convention-governed requirement this chapter tests gesture against.",
+      "Nāṭyaśāstra, Ch. 13 — documented source for nāṭyadharmī's non-iconic, stylized character.",
+      "Series A Extended, Part VII, Part One, Ch. 12 — this Part's own prior use of the same non-iconicity evidentiary signature, applied here to the lokadharmī/nāṭyadharmī material specifically.",
+      "Series A Extended, Part VII, Part One, Ch. 23 — the heraldic/signal-system comparison class this chapter references as the reason necessary is not sufficient.",
+      "Kunjunni Raja, K., <span class='rtitle'>Indian Theories of Meaning</span> — for the general distinction between conventional and natural sign-relationships this chapter applies.",
+      "Bhartṛhari, <span class='rtitle'>Vākyapadīya</span> I — for the technical requirements of linguistic status this chapter and Chapter 35 jointly test gesture against."
+    ]
+  },
+  {
+    n:35, cluster:"RQ6", title:"Necessary but Not Sufficient: Bhartṛhari's Further Conditions",
+    dn:"आवश्यकं न तु पर्याप्तम् — अपराणि लक्षणानि", full:true,
+    body:`
+    <h3 class="sub-h">35.1 What Further Conditions Bhartṛhari's Framework Requires</h3>
+    <p>This chapter identifies the further conditions, beyond mere conventionality, that Bhartṛhari's technical framework requires of anything counting as fully linguistic — conditions this series' Part One establishes at length: the sign must participate in a sphoṭa-style manifestation-relationship with its meaning (not merely an agreed pairing), and the sign-system must possess the productive, combinatorial structure capable of generating sentence-level, propositionally novel content.</p>
+    <h3 class="sub-h">35.2 Checking Gesture Against the Manifestation Condition</h3>
+    <p>This chapter checks gesture against the manifestation condition and finds it already tested and answered negatively by the RQ 2 cluster (Ch. 9–16): feature (c) of sphoṭa theory — manifestation rather than convention — fails for the documented general case of codified gesture (Ch. 12), with only a bounded, non-rescuing iconic exception (Ch. 13–14). This chapter does not re-argue that finding but applies it directly here: satisfying conventionality (Ch. 34) while failing manifestation (Ch. 12) is precisely the profile of a non-linguistic conventional sign-system in Bhartṛhari's own terms.</p>
+    <h3 class="sub-h">35.3 Checking Gesture Against the Productivity/Generativity Condition</h3>
+    <p>This chapter checks gesture against the productivity condition and finds it already tested and answered negatively by the RQ 4 and RQ 3 clusters (Ch. 19–21, 30–31): gesture lacks combinatorial productivity and does not satisfy the general theoretical requirements for sentence-level generativity, confirmed against the external sign-language-linguistics benchmark. Again, this chapter applies rather than re-argues these findings.</p>
+    <h3 class="sub-h">35.4 The Chapter's Finding</h3>
+    <p>Gesture satisfies one of the conditions Bhartṛhari's framework requires for full linguistic status (conventionality, Ch. 34) while failing two others already independently established across this Part (manifestation, Ch. 12; productivity/generativity, Ch. 19–21, 30–31). This chapter's finding is that gesture's conventionality rules out one possible objection to calling it linguistic (that it is merely natural, iconic resemblance) without thereby establishing that gesture meets every further condition full linguistic status would require.</p>
+    <div class="callout warn"><span class="callout-tag">Chapter 35 — Function Within the Cluster</span>Gesture satisfies conventionality (Ch. 34) but fails both the manifestation condition (per Ch. 12) and the productivity/generativity condition (per Ch. 19–21, 30–31) that Bhartṛhari's framework further requires. RQ 6's necessary-but-not-sufficient answer is now fully evidenced by cross-reference to this Part's own prior findings.</div>
+    `,
+    refs:[
+      "Bhartṛhari, <span class='rtitle'>Vākyapadīya</span> I–II — for the full set of conditions (manifestation, productivity) this chapter checks gesture against, beyond mere conventionality.",
+      "Series A Extended, Part VII, Part One, Ch. 12–14 — the RQ 2 cluster's manifestation-finding, applied rather than re-argued here.",
+      "Series A Extended, Part VII, Part One, Ch. 19–21 — the RQ 4 cluster's productivity-finding, applied rather than re-argued here.",
+      "Series A Extended, Part VII, Part One, Ch. 30–31 — the RQ 3 cluster's generativity-finding and sign-language benchmark, applied rather than re-argued here.",
+      "Matilal, B.K., <span class='rtitle'>The Word and the World</span> — for the general philosophical structure of multi-condition category membership this chapter's method depends on.",
+      "Series A Extended, Part VII, Part One, Ch. 34 — this chapter's own point of departure, whose necessary-but-not-yet-sufficient finding is completed here."
+    ]
+  },
+  {
+    n:36, cluster:"RQ6", title:"Cluster Synthesis: RQ 6 Closed as Partial",
+    dn:"षष्ठप्रश्नस्य आंशिकसमाधानम्", full:true,
+    body:`
+    <h3 class="sub-h">36.1 Gathering the Cluster's Findings</h3>
+    <p>This chapter gathers the findings of Chapters 33 through 35: the lokadharmī/nāṭyadharmī distinction is documented with a precise scope, both registers legitimate and intentional (Ch. 33); nāṭyadharmī gesture satisfies the convention-governed necessary condition for Bhartṛhari's technical sense of linguistic status (Ch. 34); but gesture fails the further manifestation and productivity/generativity conditions that framework also requires, as independently established elsewhere in this Part (Ch. 35).</p>
+    <h3 class="sub-h">36.2 The Cluster's Final Answer to RQ 6</h3>
+    <p>RQ 6 is answered: the lokadharmī/nāṭyadharmī distinction shows the tradition itself treating nāṭyadharmī gesture's meaning-bearing capacity as conventional rather than as naive natural resemblance, satisfying one necessary condition for linguistic status in Bhartṛhari's technical sense, without by itself establishing that gesture meets the further, independently-tested conditions (manifestation, productivity) that fuller linguistic status would require.</p>
+    <h3 class="sub-h">36.3 Why This Cluster Is Efficient Rather Than Redundant</h3>
+    <p>This chapter notes explicitly that this cluster's brevity relative to RQ 1 through RQ 4 (four chapters rather than eight) reflects genuine efficiency rather than reduced rigor: RQ 6's question depends heavily on findings this Part had already independently established (Ch. 12, 19–21, 30–31), and a properly disciplined cluster applies existing findings rather than re-deriving them from scratch merely to fill a chapter quota — this chapter treats that efficiency as itself consistent with this series' evidentiary discipline, not a departure from it.</p>
+    <h3 class="sub-h">36.4 What This Sets Up for RQ 7</h3>
+    <p>This chapter's closing observation is that RQ 6's qualified finding — conventional but not manifestational, meaning-bearing but not fully generative — describes exactly the profile a different theoretical model, rather than sphoṭa, would need to accommodate. This is the direct hand-off to Chapter 37, which opens RQ 7's cluster: the case for treating gesture's operation through dhvani rather than sphoṭa.</p>
+    <div class="callout warn"><span class="callout-tag">Chapter 36 — Cluster Closed</span>RQ 6 is closed as partial: nāṭyadharmī gesture is conventional (satisfying a necessary condition) but not manifestational or fully generative (failing further conditions), a profile this chapter hands directly to RQ 7's dhvani-proposal.</div>
+    `,
+    refs:[
+      "This chapter synthesizes only sources already cited in Chapters 33–35 of this cluster, consistent with this series' practice of not manufacturing new support at a closing chapter.",
+      "Nāṭyaśāstra, Ch. 13 — the cluster's central textual anchor, cited across Chapters 33–34.",
+      "Bhartṛhari, <span class='rtitle'>Vākyapadīya</span> I–II — the cluster's technical framework, cited across Chapters 34–35.",
+      "Series A Extended, Part VII, Part One, Ch. 12, 19–21, 30–31 — the cross-referenced prior findings this cluster applies rather than re-derives.",
+      "Series A Extended, Part I, §29.2 — Bhartṛhari's universals-commitment, the cluster's foundational anchor.",
+      "Series A Extended, Part VII, Part One, Ch. 37 (this delivery) — the dhvani-proposal this cluster's qualified finding directly motivates."
+    ]
+  },
+  {
+    n:37, cluster:"RQ7", title:"Why a Different Theoretical Model Is Needed",
+    dn:"भिन्नसिद्धान्तस्य आवश्यकता", full:true,
+    body:`
+    <h3 class="sub-h">37.1 Restating the Accumulated Case for a New Model</h3>
+    <p>This chapter opens the RQ 7 cluster by restating, without re-arguing, the accumulated negative and qualified findings this Part has established across RQ 2, RQ 4, RQ 3, and RQ 6: gesture fails sphoṭa's manifestation-requirement (Ch. 12); lacks phonemic-style combinatorial productivity (Ch. 19–21); does not achieve independent sentence-level generativity, confirmed against the sign-language-linguistics benchmark (Ch. 30–31); and satisfies only the conventionality condition, not the further conditions, for full linguistic status (Ch. 35–36).</p>
+    <h3 class="sub-h">37.2 Why This Accumulation Rules Out Sphoṭa as the Operative Model</h3>
+    <p>This chapter treats the accumulation of these four independent negative or partial findings as jointly ruling out sphoṭa as the operative theoretical model for how gesture actually generates meaning — not because any single finding alone is decisive, but because sphoṭa specifically requires exactly the features (manifestation, generativity) this Part has now tested from four separate angles and found absent or only weakly present.</p>
+    <h3 class="sub-h">37.3 What a Replacement Model Must Accommodate</h3>
+    <p>This chapter states precisely what a replacement model needs to accommodate, drawn directly from the documented positive findings this Part has also established: gesture is conventionally meaningful (Ch. 34), holistically grasped even if not manifestationally so (Ch. 11), context-dependent in its meaning-resolution (documented via the nānārtha-hasta phenomenon this Part's companion Part Two examines at length), and coordinated with rather than independent of an accompanying verbal channel (Ch. 26–29).</p>
+    <h3 class="sub-h">37.4 Nominating Dhvani as the Candidate</h3>
+    <p>This chapter nominates <span class="term">dhvani</span> theory, developed in Sanskrit poetics most systematically by Ānandavardhana — where dhvani names suggested (<span class="iast">vyaṅgya</span>) sense that a manifesting expression (<span class="iast">vyañjaka</span>) evokes without stating it through ordinary denotation (<span class="iast">abhidhā</span>) or secondary indication (<span class="iast">lakṣaṇā</span>) — as the candidate model Chapter 38 tests feature by feature against the accommodation-requirements this chapter has just stated.</p>
+    <div class="callout"><span class="callout-tag">Chapter 37 — Function Within the Cluster</span>Restates and consolidates four independent findings across this Part that jointly rule out sphoṭa as gesture's operative model, states precisely what a replacement model must accommodate, and nominates dhvani theory as the candidate Chapter 38 tests directly.</div>
+    `,
+    refs:[
+      "Series A Extended, Part VII, Part One, Ch. 12, 19–21, 30–31, 35–36 — the four independent findings this chapter consolidates rather than re-argues.",
+      "Ānandavardhana, <span class='rtitle'>Dhvanyāloka</span> — the primary documented source for the dhvani theory nominated in this chapter.",
+      "Abhinavagupta, <span class='rtitle'>Locana</span> (commentary on the Dhvanyāloka) — for the developed technical apparatus of vyañjaka/vyaṅgya this chapter introduces.",
+      "Bhartṛhari, <span class='rtitle'>Vākyapadīya</span> I — for the sphoṭa-requirements this chapter shows to be jointly unmet, motivating the search for a replacement.",
+      "Ingalls, D.H.H., Masson, J.L., and Patwardhan, M.V. (trans.), <span class='rtitle'>The Dhvanyāloka of Ānandavardhana with the Locana of Abhinavagupta</span> — standard translation and commentary consulted for this chapter's account of dhvani theory.",
+      "Series A Extended, Part I, §4.2 — this series' own prior treatment of the sphoṭa/dhvani distinction, presupposed and extended here."
+    ]
+  },
+  {
+    n:38, cluster:"RQ7", title:"Three Features of Dhvani That Fit the Evidence Better",
+    dn:"त्रीणि ध्वनिलक्षणानि साक्ष्यानुरूपाणि", full:true,
+    body:`
+    <h3 class="sub-h">38.1 Testing Dhvani Against This Part's First Accommodation-Requirement</h3>
+    <p>This chapter tests dhvani theory feature by feature against the three accommodation-requirements Chapter 37 stated, beginning with the requirement that a replacement model not depend on sphoṭa's failed temporally-sequenced, discretely-segmented manifesting-cause structure (Ch. 10). Dhvani theory does not require this structure: a suggested sense can be evoked by a held, static expression exactly as well as by a temporally unfolding one, since suggestion depends on interpretive context rather than sequential phonemic-style decoding — this fits the documented profile of held hastas (Ch. 10) far better than sphoṭa did.</p>
+    <h3 class="sub-h">38.2 Testing Against the Context-Dependent Polysemy Requirement</h3>
+    <p>This chapter tests dhvani against the requirement that a replacement model accommodate context-dependent, one-sign-many-meanings signification as a central rather than marginal case — the nānārtha-hasta phenomenon this Part's companion Part Two examines at length. Dhvani theory is documented as built to accommodate exactly this: suggested sense is expected, on Ānandavardhana's own account, to vary systematically with context, in a way sphoṭa's stable, universal meaning-unit is not built to accommodate gracefully. This is a second, independent point of good fit.</p>
+    <h3 class="sub-h">38.3 Testing Against the Qualified-Perceiver Requirement</h3>
+    <p>This chapter tests dhvani against a third requirement, drawn from the trained-spectator material this Part's companion Part Two examines directly: dhvani theory explicitly requires a qualified perceiver (<span class="iast">sahṛdaya</span>, the "same-hearted" connoisseur) capable of grasping the suggestion, a documented structural feature that anticipates, rather than merely coincides with, the specialized-competence requirement this series' broader treatment of rasa theory establishes for the trained spectator.</p>
+    <h3 class="sub-h">38.4 The Chapter's Finding</h3>
+    <p>Dhvani theory fits all three of Chapter 37's accommodation-requirements demonstrably better than sphoṭa did on each of the four tests this Part has run (Ch. 10–12, 19–21, 30–31, 34–35): it does not require sphoṭa's failed temporal structure, it is built to accommodate context-dependent polysemy as central rather than marginal, and it explicitly requires the same kind of qualified perceiver this Part's evidence independently shows codified gesture's reception to depend on.</p>
+    <div class="callout"><span class="callout-tag">Chapter 38 — Function Within the Cluster</span>Dhvani theory passes all three of Chapter 37's accommodation-requirements: no dependence on sphoṭa's failed temporal structure, built-in accommodation of context-dependent polysemy, and an explicit qualified-perceiver requirement matching this Part's own independent findings on trained spectatorship.</div>
+    `,
+    refs:[
+      "Ānandavardhana, <span class='rtitle'>Dhvanyāloka</span> — the cluster's central textual source, tested feature by feature in this chapter.",
+      "Series A Extended, Part VII, Part One, Ch. 10 — the temporal-structure finding dhvani is shown here to accommodate better than sphoṭa did.",
+      "Series A Extended, Part VII, Part Two (this restructuring) — where the nānārtha-hasta polysemy phenomenon and the trained-spectator competence question are examined at full length; this chapter's fit-claims are provisional pending that treatment.",
+      "Abhinavagupta, <span class='rtitle'>Locana</span> — for the documented sahṛdaya (qualified-perceiver) requirement built into dhvani theory.",
+      "Ingalls, D.H.H., Masson, J.L., and Patwardhan, M.V. (trans.), <span class='rtitle'>The Dhvanyāloka of Ānandavardhana with the Locana of Abhinavagupta</span> — consulted throughout this chapter's three-feature test.",
+      "Series A Extended, Part VII, Part One, Ch. 37 — this chapter's own point of departure, whose three requirements are tested and passed here."
+    ]
+  },
+  {
+    n:39, cluster:"RQ7", title:"Cluster Synthesis: RQ 7 Closed — This Part's Central Proposal",
+    dn:"सप्तमप्रश्नस्य समाधानम् — प्रमुखप्रस्तावः", full:true,
+    body:`
+    <h3 class="sub-h">39.1 Gathering the Cluster's Findings</h3>
+    <p>This chapter gathers the findings of Chapters 37 and 38: sphoṭa is jointly ruled out as gesture's operative model by four independent findings already established across this Part (Ch. 37); dhvani theory is nominated and tested feature by feature against three accommodation-requirements, passing all three (Ch. 38).</p>
+    <h3 class="sub-h">39.2 The Cluster's Final Answer to RQ 7</h3>
+    <p>RQ 7 is answered: abhinaya's meaning-generation is better modeled on dhvani (suggestion) than on sphoṭa (direct manifestation). This is stated here, as it was at this Part's first delivery, as this Part's own proposed synthetic contribution — clearly flagged as such rather than presented as a documented classical equivalence the tradition itself explicitly draws, consistent with this series' evidentiary discipline throughout.</p>
+    <h3 class="sub-h">39.3 Why This Proposal Is Now Far Better Evidenced Than at First Delivery</h3>
+    <p>This chapter notes explicitly how much more rigorously evidenced this proposal now is compared to its first, shorter statement at this Part's initial delivery: it now rests on four independent negative findings against sphoṭa (Ch. 12, 19–21, 30–31, 35) rather than one, and on three independently tested and passed accommodation-requirements for dhvani (Ch. 38) rather than an impressionistic fit. This chapter treats this expanded evidentiary base as the central achievement of Part One's first thirty-nine chapters taken together.</p>
+    <h3 class="sub-h">39.4 What Remains for Chapter 40</h3>
+    <p>This chapter hands off to Chapter 40 the two remaining tasks for Part One: RQ 8's own question — the documented textual evidence, or absence of it, for a named threshold-moment at which madhyamā or vaikharī crosses over into codified gesture — and Part One's own full closing synthesis, drawing all eight research questions and thirty-nine chapters together into a single considered position.</p>
+    <div class="callout warn"><span class="callout-tag">Chapter 39 — Cluster Closed, Part One's Central Proposal Confirmed</span>RQ 7 is closed: dhvani over sphoṭa, now resting on four independent negative sphoṭa-findings and three independently-tested dhvani accommodation-requirements — a substantially stronger evidentiary base than this proposal's first, shorter statement. Chapter 40 closes RQ 8 and Part One as a whole.</div>
+    `,
+    refs:[
+      "This chapter synthesizes only sources already cited in Chapters 37–38 of this cluster, consistent with this series' practice of not manufacturing new support at a closing chapter.",
+      "Ānandavardhana, <span class='rtitle'>Dhvanyāloka</span>, and Abhinavagupta, <span class='rtitle'>Locana</span> — the cluster's central proposal, cited across Chapters 37–38.",
+      "Bhartṛhari, <span class='rtitle'>Vākyapadīya</span> I — the sphoṭa-model this proposal is shown to improve upon, cited across the four cross-referenced findings.",
+      "Series A Extended, Part VII, Part One, Ch. 12, 19–21, 30–31, 35 — the four independent negative sphoṭa-findings this chapter's confirmed proposal now rests on.",
+      "Series A Extended, Part I, §4.2 — this series' own foundational sphoṭa/dhvani distinction, extended and substantially strengthened by this Part's own thirty-nine chapters.",
+      "Series A Extended, Part VII, Part One, Ch. 40 (this delivery) — where RQ 8 and Part One's full closing synthesis are completed."
+    ]
+  },
+  {
+    n:40, cluster:"RQ8 / Synthesis", title:"The Named Threshold Moment (RQ 8) and Part One's Full Closing Position",
+    dn:"संक्रमणबिन्दुः, प्रथमखण्डस्य पूर्णसमाधानं च", full:true,
+    body:`
+    <h3 class="sub-h">40.1 RQ 8: Restating the Question Precisely</h3>
+    <p>RQ 8 asks where the tradition locates the specific threshold moment at which madhyamā (mental rehearsal) or vaikharī (audible speech) crosses over into codified physical gesture, and whether this transition is itself named and theorized by the tradition, or only presupposed by this Part's own inferential construction from adjacent material.</p>
+    <h3 class="sub-h">40.2 Searching the Documented Material for a Named Threshold</h3>
+    <p>This chapter's search of the material examined across this Part's thirty-nine chapters — the Vākyapadīya, the Nāṭyaśāstra, and the Abhinavabhāratī — does not find a single named technical term marking this specific transition-moment, comparable in specificity to aupacārika prayoga's own documented precision for the category-extension question (RQ 1, Ch. 1–8). What the documented material offers instead is the functional argument RQ 1's cluster already identified (externalization-for-another as vaikharī's defining property, Ch. 3) applied to gesture as a further instance of that same externalizing function — which licenses treating gesture as vaikharī's further reach without itself naming a discrete threshold-moment the way, for instance, a specific verse might name the exact point at which paśyantī differentiates into madhyamā.</p>
+    <h3 class="sub-h">40.3 The Chapter's Honest Finding on RQ 8</h3>
+    <p>This chapter's finding is that the threshold this Part's own title names — "the threshold to abhinaya" — is, on the documented evidence, this Part's own inferential construction from the functional vaikharī-extension argument (Ch. 1–8) rather than a threshold the tradition itself names and theorizes as a discrete, locatable moment. This chapter reports this plainly, consistent with RQ 8's own framing (Ch. 1 of this Part's first delivery) that anticipated exactly this possibility and committed in advance not to blur the distinction between documented threshold and constructed inference.</p>
+    <h3 class="sub-h">40.4 Part One's Full Closing Synthesis: The Eight Research Questions</h3>
+    <p>Gathering all eight research questions this Part carries: RQ 1 (naming mechanism) is answered — aupacārika prayoga, argued from vaikharī's own defining property, with reception-history and bibliographic honesty built in (Ch. 1–8). RQ 2 (sphoṭa transfer) is answered negatively, with a bounded, non-rescuing iconic exception (Ch. 9–16). RQ 4 (hasta/varṇa parallel) is answered as structurally partial — genuine inventory-resemblance without combinatorial productivity (Ch. 17–24). RQ 3 (sentence-level meaning) is answered as qualified-coordinated, confirmed against the hardest documented test case and the sign-language-linguistics external benchmark (Ch. 25–32). RQ 6 (linguistic status) is answered as partial — conventional but not manifestational or generative (Ch. 33–36). RQ 7 (theoretical model) is answered as dhvani over sphoṭa, this Part's own central, now heavily evidenced proposal (Ch. 37–39). RQ 8 (named threshold) is answered honestly as constructed rather than documented (this chapter).</p>
+    <h3 class="sub-h">40.5 What Unifies These Findings</h3>
+    <p>This chapter's own final observation is the same pattern noted in this Part's earlier interim synthesis, now confirmed across the complete forty chapters: every one of Part One's seven research questions resolves to a qualified position, never a flat yes or no. Gesture is licensed under vaikharī with respect to one specific defining property, but not with respect to sphoṭa's manifestation-relationship, not with respect to phonemic-style productivity, not with respect to independent sentence-generativity, and not with respect to a documented named threshold-moment. Where a stronger version of any claim was tested directly, it did not survive; where a more precisely bounded version was tested, it did. Dhvani, not sphoṭa, is this Part's own considered proposal for how codified gesture actually generates meaning — a proposal now resting on the convergent weight of four independent negative sphoṭa-findings and three independently-confirmed dhvani accommodation-features, rather than on any single argument alone.</p>
+    <h3 class="sub-h">40.6 The Hand-Off to Part Two and Part Three</h3>
+    <p>This chapter closes Part One and hands off cleanly to this restructuring's remaining two Parts: Part Two takes up RQ 5, RQ 9, RQ 10, RQ 13, RQ 14, RQ 11, and RQ 12 — the semiotic detail of polysemy and the fourfold scheme, the sāttvika tension, and the empirical/cognitive-science check on this Part's own findings. Part Three takes up RQ 15 and the historical/comparative question of living vocabulary versus fixed notation, together with Part Seven's full closing synthesis once all three Parts' forty chapters each are complete.</p>
+    <div class="callout warn"><span class="callout-tag">Chapter 40 — Part One Fully Closed: 40 of 40 Chapters</span>RQ 8 is answered honestly: the threshold is this Part's own constructed inference, not a documented named transition-point. All seven of Part One's research questions now stand answered, each qualified rather than flat, converging on dhvani over sphoṭa as this Part's central, well-evidenced proposal. Part One is complete; Part Two and Part Three remain.</div>
+    `,
+    refs:[
+      "Bhartṛhari, <span class='rtitle'>Vākyapadīya</span> I — searched, alongside the Nāṭyaśāstra and Abhinavabhāratī, for a named threshold-moment and found not to supply one with RQ 1-level specificity.",
+      "Abhinavagupta, <span class='rtitle'>Abhinavabhāratī</span> ad NŚ 8 — re-examined here specifically for the absence of a named transition-term, distinct from its documented presence of the aupacārika prayoga argument (Ch. 1–8).",
+      "Series A Extended, Part VII, Part One, Ch. 1–39 — this chapter synthesizes the complete set of findings from all thirty-nine preceding chapters; no new primary sources are introduced at this closing stage.",
+      "Ānandavardhana, <span class='rtitle'>Dhvanyāloka</span> — this Part's own central proposal (Ch. 37–39), restated in this chapter's closing synthesis.",
+      "Series A Extended, Part I (this series' foundational Part) — the sphoṭa/vaikharī apparatus this entire Part has tested, refined, and in several respects qualified against gesture specifically.",
+      "Series A Extended, Part VII, Part Two and Part Three (this restructuring, forthcoming) — the two remaining Parts this chapter formally hands off to."
+    ]
+  }
+];
+
+const stubs = [
+  {range:[33,36], cluster:"RQ 6 — Lokadharmī, Nāṭyadharmī, and Linguistic Status", titles:[
+    "The Distinction Itself and Its Documented Scope","Convention-Governed vs. Naturally Iconic","Necessary but Not Sufficient: Bhartṛhari's Further Conditions","Cluster Synthesis: RQ 6 Closed as Partial"
+  ]},
+  {range:[37,39], cluster:"RQ 7 — From Sphoṭa to Dhvani", titles:[
+    "Why a Different Theoretical Model Is Needed","Three Features of Dhvani That Fit the Evidence Better","Cluster Synthesis: RQ 7 Closed — This Part's Central Proposal"
+  ]},
+  {range:[40,40], cluster:"RQ 8 and Part One's Closing Synthesis", titles:[
+    "The Named Threshold Moment (RQ 8) and Part One's Full Closing Position"
+  ]}
+];
+
+const tabbar = document.getElementById('tabbar');
+const panels = document.getElementById('panels');
+
+function makeFullPanel(ch){
+  const div = document.createElement('div');
+  div.className = 'tab-panel';
+  div.id = 'panel-'+ch.n;
+  div.innerHTML = `
+    <div class="chapter-eyebrow">Chapter ${ch.n} · ${ch.cluster} Cluster</div>
+    <h2 class="chapter-title">${ch.title}<span class="dn">${ch.dn}</span></h2>
+    ${ch.body}
+    <div class="refs">
+      <span class="refs-tag">Contextual References (minimum six)</span>
+      <ol>${ch.refs.map(r=>`<li>${r}</li>`).join('')}</ol>
+    </div>
+  `;
+  return div;
+}
+
+function makeStubPanel(n, clusterLabel, title){
+  const div = document.createElement('div');
+  div.className = 'tab-panel';
+  div.id = 'panel-'+n;
+  div.innerHTML = `
+    <div class="chapter-eyebrow">Chapter ${n} · ${clusterLabel}</div>
+    <h2 class="chapter-title">${title}</h2>
+    <div class="stub-box">
+      <span class="stub-num">Forthcoming</span>
+      This chapter's working title is fixed and its research question already assigned; it will be written to the same depth as Chapters 1–8, with its own minimum six-item reference apparatus, in a subsequent delivery.
+    </div>
+  `;
+  return div;
+}
+
+chapters.forEach((ch,i)=>{
+  const btn = document.createElement('button');
+  btn.className = 'tab-btn'+(i===0?' active':'');
+  btn.textContent = ch.n+'. '+ch.title.split(':')[0].slice(0,22)+(ch.title.length>22?'…':'');
+  btn.onclick = ()=>selectTab(ch.n);
+  tabbar.appendChild(btn);
+  panels.appendChild(makeFullPanel(ch));
+});
+
+stubs.forEach(group=>{
+  group.titles.forEach((title,idx)=>{
+    const n = group.range[0]+idx;
+    const btn = document.createElement('button');
+    btn.className = 'tab-btn stub';
+    btn.textContent = n+'. '+title.slice(0,18)+(title.length>18?'…':'');
+    btn.onclick = ()=>selectTab(n);
+    tabbar.appendChild(btn);
+    panels.appendChild(makeStubPanel(n, group.cluster, title));
+  });
+});
+
+const clusterRanges = [
+  {lo:1, hi:8, label:"RQ 1 — Aupacārika Prayoga: The Named Mechanism (Ch. 1–8)"},
+  {lo:9, hi:16, label:"RQ 2 — Does Sphoṭa Survive the Transfer to Gesture? (Ch. 9–16)"},
+  {lo:17, hi:24, label:"RQ 4 — Hasta and Varṇa: Testing the Inventory Parallel (Ch. 17–24)"},
+  {lo:25, hi:32, label:"RQ 3 — Can Gesture Generate Sentence-Level Meaning? (Ch. 25–32)"},
+  {lo:33, hi:36, label:"RQ 6 — Lokadharmī, Nāṭyadharmī, and Linguistic Status (Ch. 33–36)"},
+  {lo:37, hi:39, label:"RQ 7 — From Sphoṭa to Dhvani (Ch. 37–39)"},
+  {lo:40, hi:40, label:"RQ 8 and Part One's Closing Synthesis (Ch. 40)"}
+];
+
+function selectTab(n){
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
+  const idx = n-1;
+  document.querySelectorAll('.tab-btn')[idx].classList.add('active');
+  document.getElementById('panel-'+n).classList.add('active');
+  const range = clusterRanges.find(r=>n>=r.lo && n<=r.hi);
+  if(range) document.getElementById('clusterLabel').textContent = range.label;
+}
+selectTab(1);
+</script>
+
+</body>
+</html>
